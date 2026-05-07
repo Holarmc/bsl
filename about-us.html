@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | BiproSyncLogic (BSL)</title>
+<meta content="Learn about BiproSyncLogic, our mission, vision, and core values in delivering enterprise-grade IT infrastructure and managed services." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "secondary": "#366b00",
+                      "surface-variant": "#e1e3e4",
+                      "secondary-fixed": "#acf770",
+                      "surface": "#f8f9fa",
+                      "background": "#f8f9fa",
+                      "tertiary": "#5f5e5f",
+                      "primary-container": "#00aeef",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#0c2000",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#92da57",
+                      "inverse-primary": "#82cfff",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "on-surface-variant": "#3e4850",
+                      "on-tertiary-container": "#39393a",
+                      "outline": "#6e7881",
+                      "tertiary-fixed": "#e5e2e3",
+                      "tertiary-container": "#a4a2a3",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#d9dadb",
+                      "on-tertiary-fixed-variant": "#474647",
+                      "on-primary-container": "#003e58",
+                      "surface-container": "#edeeef",
+                      "surface-bright": "#f8f9fa",
+                      "primary-fixed-dim": "#82cfff",
+                      "primary-fixed": "#c6e7ff",
+                      "on-background": "#191c1d",
+                      "on-error": "#ffffff",
+                      "on-surface": "#191c1d",
+                      "surface-tint": "#00658d",
+                      "secondary-container": "#acf770",
+                      "surface-container-highest": "#e1e3e4",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#275000",
+                      "on-primary-fixed": "#001e2d",
+                      "surface-container-high": "#e7e8e9",
+                      "surface-container-low": "#f3f4f5",
+                      "on-secondary-container": "#3a7100",
+                      "inverse-surface": "#2e3132",
+                      "outline-variant": "#bdc8d1",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#004c6b",
+                      "primary": "#00658d",
+                      "tertiary-fixed-dim": "#c8c6c7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "stack-md": "16px",
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "margin-desktop": "40px",
+                      "unit": "8px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "section-padding": "80px"
+              },
+              "fontFamily": {
+                      "h1": ["Manrope"],
+                      "h2": ["Manrope"],
+                      "label-sm": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "h3": ["Manrope"]
+              },
+              "fontSize": {
+                      "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface shadow-sm transition-all duration-300">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="font-h3 text-h3 font-extrabold text-primary">BSL</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Training</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all">
+                Get Started
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section / Header -->
+<section class="relative bg-on-primary py-section-padding overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center relative z-10">
+<div class="space-y-stack-md">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">Our Identity</span>
+<h1 class="font-h1 text-h1 text-on-background">Empowering Enterprise with <span class="text-primary">Resilient IT</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        We are a technology solutions company focused on helping organizations build, manage, and scale resilient IT environments.
+                    </p>
+</div>
+<div class="relative">
+<div class="rounded-xl overflow-hidden shadow-xl aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="A professional enterprise IT environment showing a clean data center aisle with glowing server racks. The lighting is sophisticated with blue accents reflecting the corporate brand colors of BSL. The atmosphere is quiet, high-tech, and organized, symbolizing the structural integrity and precision of modern IT infrastructure management." src="https://lh3.googleusercontent.com/aida/ADBb0ugPUOZYfGlfAKz9JbiCntCQgRPCZH1sBkIddbVZFob-Yh-SJ3Nhma5XyPHov1HqPQ1yhPUdnA46DFhH0sorPLS65OR2QLzx4KqU8C4YWqm-hU2qVLx7GtMHDUoKprMdQdI__-YjtNdYCY9x06aCjDEC2AUki2IeQ1ANR9elDtfihRFdw6DwurnXYu9nVDZMZvYoiyQjINFjWQ1MuoSA0y-Yord-c5RoicSBSoalyKqOttrAiTm0S5J-LMfGUkzJmLrBLghg3oqp"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary-container p-6 rounded-xl shadow-lg hidden md:block">
+<p class="text-on-primary font-h3 text-h3 font-bold">15+ Years</p>
+<p class="text-on-primary/80 font-body-md text-body-md">Combined Expertise</p>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -skew-x-12 translate-x-1/2 -z-0"></div>
+</section>
+<!-- About Section (Contextual Text) -->
+<section class="bg-surface py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-gutter items-start">
+<div class="md:w-1/2">
+<h2 class="font-h2 text-h2 text-on-surface mb-stack-md">Engineering Reliable IT.</h2>
+<div class="w-20 h-1.5 bg-primary mb-stack-lg"></div>
+</div>
+<div class="md:w-1/2 space-y-stack-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            From day-to-day IT support to complex infrastructure migrations, we combine deep technical expertise with practical execution to deliver measurable business outcomes.
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Our approach is simple: <span class="font-bold text-primary">stabilize, optimize, and transform</span> your IT systems — so you can focus on growth. We act as a technology partner that bridges the gap between complex legacy systems and future-ready digital platforms.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Bento Grid -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Vision -->
+<div class="md:col-span-5 bg-on-primary p-10 rounded-xl shadow-sm border-b-4 border-secondary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-5xl mb-4" data-icon="visibility">visibility</span>
+<h3 class="font-h2 text-h2 text-on-surface mb-4">Our Vision</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                                To become a leading technology partner in Africa, enabling businesses to thrive through resilient, innovative, and future-ready IT solutions.
+                            </p>
+</div>
+</div>
+<!-- Mission -->
+<div class="md:col-span-7 bg-primary text-on-primary p-10 rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-on-primary text-5xl mb-4" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="font-h2 text-h2 text-on-primary mb-4">Our Mission</h3>
+<p class="font-body-lg text-body-lg text-on-primary/90">
+                                To deliver reliable, secure, and scalable technology services that empower organizations to operate efficiently, grow sustainably, and adapt confidently to change.
+                            </p>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-10">
+<span class="material-symbols-outlined text-[300px]" data-icon="hub">hub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values (RETIC) -->
+<section class="bg-surface py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-h2 text-h2 text-on-surface">Our Core Values</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Defined by the RETIC acronym</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-stack-md">
+<!-- Reliability -->
+<div class="bg-white p-6 rounded-xl border border-surface-variant hover:shadow-lg transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+</div>
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Reliability</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We deliver consistent, dependable solutions that businesses can trust.</p>
+</div>
+<!-- Excellence -->
+<div class="bg-white p-6 rounded-xl border border-surface-variant hover:shadow-lg transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+</div>
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Excellence</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We uphold high standards in execution, performance, and service delivery.</p>
+</div>
+<!-- Trust -->
+<div class="bg-white p-6 rounded-xl border border-surface-variant hover:shadow-lg transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+</div>
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Trust</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We operate with transparency, honesty, and accountability.</p>
+</div>
+<!-- Innovation -->
+<div class="bg-white p-6 rounded-xl border border-surface-variant hover:shadow-lg transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span>
+</div>
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Innovation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We embrace modern technologies and continuously improve our solutions.</p>
+</div>
+<!-- Customer-Centricity -->
+<div class="bg-white p-6 rounded-xl border border-surface-variant hover:shadow-lg transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="person_pin_circle">person_pin_circle</span>
+</div>
+<h4 class="font-h3 text-h3 text-on-surface mb-2">Customer Centricity</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">We prioritize our clients' success and align our services to their goals.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-highest py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto space-y-stack-md">
+<h2 class="font-h1 text-h1 text-on-background">Ready to transform your IT?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Partner with us to build a resilient, secure, and high-performing technology environment. Our experts are ready to assess your current infrastructure and map out your digital future.
+                    </p>
+<div class="flex flex-wrap justify-center gap-stack-md pt-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold hover:scale-105 active:scale-95 transition-all shadow-md">
+                            Schedule a Consultation
+                        </button>
+<button class="border-2 border-on-background text-on-background px-8 py-3 rounded-lg font-bold hover:bg-on-background hover:text-white active:scale-95 transition-all">
+                            Contact Us Today
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Info Grid -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
+<div class="flex gap-4">
+<div class="text-primary"><span class="material-symbols-outlined text-4xl" data-icon="location_on">location_on</span></div>
+<div>
+<h5 class="font-h3 text-h3 text-on-surface mb-1">Our Office</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">11 Coachwood Street, Northern Foreshore Estate, Chevron</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-primary"><span class="material-symbols-outlined text-4xl" data-icon="mail">mail</span></div>
+<div>
+<h5 class="font-h3 text-h3 text-on-surface mb-1">Email Us</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">info@bsl.net</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-primary"><span class="material-symbols-outlined text-4xl" data-icon="call">call</span></div>
+<div>
+<h5 class="font-h3 text-h3 text-on-surface mb-1">Call Support</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">09058788143</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest dark:bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="md:col-span-2">
+<div class="font-h3 text-h3 font-extrabold text-primary mb-4">BSL</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Engineering reliable IT ecosystems across Africa through managed services, specialized migrations, and high-impact technical training.
+                </p>
+</div>
+<div>
+<h6 class="font-bold text-on-surface mb-4">Quick Links</h6>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold text-on-surface mb-4">Connect</h6>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:scale-95 transition-transform" href="#">
+<img alt="Social icon" class="w-6 h-6 object-contain" data-alt="A stylized social media icon design for the LinkedIn platform, set against a modern corporate background. The icon is rendered in a minimalist, clean style with a focus on professional networking and high-level enterprise connections, reflecting BiproSyncLogic's target market of IT executives and directors." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:scale-95 transition-transform" href="#">
+<img alt="Social icon" class="w-6 h-6 object-contain" data-alt="A minimalist logo icon for a technology and business platform, presented in high-contrast black and white for a professional look. The background is a clean, bright workspace that complements the light-mode UI design. The mood is corporate, established, and focused on operational efficiency." src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"/>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop pb-8 text-center border-t border-outline-variant/30 pt-8">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 BiproSyncLogic. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

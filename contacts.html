@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Careers | BiproSyncLogic (BSL)</title>
+<meta content="Get in touch with BiproSyncLogic for enterprise IT solutions or join our growing team of technology experts." name="description"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Design System Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "secondary": "#366b00",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-fixed": "#acf770",
+                    "surface": "#f8f9fa",
+                    "background": "#f8f9fa",
+                    "tertiary": "#5f5e5f",
+                    "primary-container": "#00aeef",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#0c2000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#92da57",
+                    "inverse-primary": "#82cfff",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "on-surface-variant": "#3e4850",
+                    "on-tertiary-container": "#39393a",
+                    "outline": "#6e7881",
+                    "tertiary-fixed": "#e5e2e3",
+                    "tertiary-container": "#a4a2a3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#474647",
+                    "on-primary-container": "#003e58",
+                    "surface-container": "#edeeef",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed-dim": "#82cfff",
+                    "primary-fixed": "#c6e7ff",
+                    "on-background": "#191c1d",
+                    "on-error": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "surface-tint": "#00658d",
+                    "secondary-container": "#acf770",
+                    "surface-container-highest": "#e1e3e4",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#275000",
+                    "on-primary-fixed": "#001e2d",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-container": "#3a7100",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#bdc8d1",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "primary": "#00658d",
+                    "tertiary-fixed-dim": "#c8c6c7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "section-padding": "80px"
+            },
+            "fontFamily": {
+                    "h1": ["Manrope"],
+                    "h2": ["Manrope"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h3": ["Manrope"]
+            },
+            "fontSize": {
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar Component -->
+<nav class="w-full top-0 sticky z-50 bg-surface dark:bg-background shadow-sm dark:bg-surface-container-low">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="font-h3 text-h3 font-extrabold text-primary dark:text-primary-container">BSL</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-stack-lg items-center">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">Training</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-container font-bold border-b-2 border-primary dark:border-primary-container pb-1" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all">
+                Get Started
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-on-primary-fixed overflow-hidden pt-section-padding pb-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="text-on-primary">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest mb-4 block">Connect with Experts</span>
+<h1 class="font-h1 text-h1 mb-6">Engineering Reliable IT. Powering Your Growth.</h1>
+<p class="font-body-lg text-body-lg opacity-90 max-w-xl">
+                        Whether you're looking for enterprise-grade support or a career in high-stakes technology, BSL is where precision meets innovation.
+                    </p>
+</div>
+<div class="hidden md:block relative h-[400px]">
+<img alt="Enterprise IT Infrastructure Illustration" class="w-full h-full object-cover rounded-xl shadow-2xl" data-alt="A high-definition, corporate-style photograph of a modern data center with glowing blue server racks and neat cabling. The atmosphere is professional and high-tech, reflecting technical mastery and structural integrity. Soft ambient lighting illuminates the corridor, creating a sense of precision and reliability. The aesthetic is clean, minimalist, and enterprise-focused with a cool-toned color palette." src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"/>
+</div>
+</div>
+<!-- Background Decorative Elements -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary opacity-5 skew-x-12 translate-x-1/2"></div>
+</section>
+<!-- Contact & Consultation Section (Bento Grid) -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Contact Form Card (Main Bento Piece) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-sm border-b-4 border-primary">
+<h2 class="font-h2 text-h2 text-primary mb-2">Schedule a Consultation</h2>
+<p class="text-on-surface-variant mb-8 font-body-md">Tell us about your infrastructure needs. Our experts will respond within 24 hours.</p>
+<form class="space-y-stack-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline">FULL NAME</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg p-3" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline">BUSINESS EMAIL</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg p-3" placeholder="john@enterprise.com" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline">SERVICE OF INTEREST</label>
+<select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg p-3">
+<option>IT Managed Services</option>
+<option>Infrastructure Migration</option>
+<option>System Setup</option>
+<option>IT Training</option>
+<option>Technical Support</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-outline">MESSAGE</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg p-3" placeholder="How can we help stabilize your IT environment?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-h3 text-body-lg py-4 rounded-lg hover:bg-primary-container transition-all active:scale-95 shadow-md" type="submit">
+                                Request Consultation
+                            </button>
+</form>
+</div>
+<!-- Sidebar Bento Pieces -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Direct Contact Info -->
+<div class="bg-primary text-on-primary p-8 rounded-xl relative overflow-hidden flex-1">
+<h3 class="font-h3 text-h3 mb-6 relative z-10">Direct Contact</h3>
+<div class="space-y-6 relative z-10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold">Headquarters</p>
+<p class="opacity-80">11 Coachwood Street, Northern Foreshore Estate, Chevron</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="call">call</span>
+<div>
+<p class="font-bold">Phone Number</p>
+<p class="opacity-80">+234 905 878 8143</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="mail">mail</span>
+<div>
+<p class="font-bold">Email Support</p>
+<p class="opacity-80">info@bsl.net</p>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 w-32 h-32 bg-on-primary-container rounded-full opacity-20"></div>
+</div>
+<!-- Map Placeholder/Interaction -->
+<div class="bg-surface-container-high rounded-xl overflow-hidden relative h-[250px] shadow-sm">
+<img alt="Office Location Map" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A stylized, architectural map rendering of a coastal urban neighborhood in Lagos, Nigeria, showing clean grid layouts and high-end residential areas. The map uses a sophisticated color palette of whites, grays, and brand-blue accents for water and parks. The visual style is minimalist and clean, suggesting high-end real estate and corporate precision. Subtle shadows and layers create a professional GIS-like appearance." data-location="Chevron, Nigeria" src="https://lh3.googleusercontent.com/aida/ADBb0ugPUOZYfGlfAKz9JbiCntCQgRPCZH1sBkIddbVZFob-Yh-SJ3Nhma5XyPHov1HqPQ1yhPUdnA46DFhH0sorPLS65OR2QLzx4KqU8C4YWqm-hU2qVLx7GtMHDUoKprMdQdI__-YjtNdYCY9x06aCjDEC2AUki2IeQ1ANR9elDtfihRFdw6DwurnXYu9nVDZMZvYoiyQjINFjWQ1MuoSA0y-Yord-c5RoicSBSoalyKqOttrAiTm0S5J-LMfGUkzJmLrBLghg3oqp"/>
+<div class="absolute inset-0 flex items-center justify-center bg-on-background/20">
+<div class="bg-surface p-4 rounded-lg shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-error" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-bold text-primary">Chevron Office</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Careers Section -->
+<section class="py-section-padding bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-gutter items-center">
+<div class="md:w-1/2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Work With Us</span>
+<h2 class="font-h2 text-h2 mb-6">Join the Future of IT Resilience</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            We are always looking for technical masters who value reliability, excellence, and transparency. At BSL, you'll work on mission-critical migrations and enterprise infrastructure that shapes the digital landscape of Africa.
+                        </p>
+<div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-secondary-fixed-dim shadow-sm">
+<h4 class="font-h3 text-h3 text-secondary mb-4">How to Apply</h4>
+<p class="font-body-md text-on-surface mb-6">Interested in joining our team? Send your resume and a brief cover letter outlining your expertise.</p>
+<a class="inline-flex items-center gap-2 font-bold text-primary hover:text-secondary transition-colors group" href="mailto:careers@biprosync.net">
+<span class="material-symbols-outlined" data-icon="forward_to_inbox">forward_to_inbox</span>
+                                careers@biprosync.net
+                                <span class="material-symbols-outlined translate-x-0 group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<div class="aspect-square rounded-full overflow-hidden border-8 border-surface p-4 bg-secondary-container/10">
+<img alt="Careers at BSL" class="w-full h-full object-cover rounded-full shadow-xl" data-alt="A professional, diverse group of technology experts collaborating in a bright, modern glass-walled office space. The lighting is soft and high-key, creating an optimistic and inclusive atmosphere. Team members are focused and engaged with digital tablets and laptops, reflecting a culture of innovation and excellence. The color palette emphasizes corporate whites and vibrant green accents from indoor plants." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+</div>
+<!-- Floating Achievement Chip -->
+<div class="absolute top-1/4 -left-10 glass-card p-4 rounded-xl shadow-lg flex items-center gap-3">
+<div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</div>
+<div>
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Team Environment</p>
+<p class="font-bold text-on-surface">Collaborative Culture</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section (Reflecting RETIC) -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-h2 text-h2 mb-stack-lg">Our Foundation of Trust</h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-stack-md">
+<div class="p-6 bg-surface-container-low rounded-xl hover:bg-white transition-all shadow-sm hover:shadow-md group">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="verified_user">verified_user</span>
+<h4 class="font-bold text-primary mb-2">Reliability</h4>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl hover:bg-white transition-all shadow-sm hover:shadow-md">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="military_tech">military_tech</span>
+<h4 class="font-bold text-primary mb-2">Excellence</h4>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl hover:bg-white transition-all shadow-sm hover:shadow-md">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="handshake">handshake</span>
+<h4 class="font-bold text-primary mb-2">Trust</h4>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl hover:bg-white transition-all shadow-sm hover:shadow-md">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="rocket_launch">rocket_launch</span>
+<h4 class="font-bold text-primary mb-2">Innovation</h4>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl hover:bg-white transition-all shadow-sm hover:shadow-md">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="person_celebrate">person_celebrate</span>
+<h4 class="font-bold text-primary mb-2">Customer-Centricity</h4>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full bg-surface-container-highest dark:bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="space-y-4">
+<div class="font-h3 text-h3 font-extrabold text-primary dark:text-primary-container">BSL</div>
+<p class="text-on-surface-variant font-body-md opacity-80">
+                    Empowering Nigerian organizations with enterprise-grade IT solutions and resilient infrastructure.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary">Explore</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Services</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">IT Training</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Infrastructure Migration</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary">Office</h4>
+<p class="text-on-surface-variant text-sm">
+                    11 Coachwood Street, Northern Foreshore Estate, Chevron<br/>
+                    Lagos, Nigeria
+                </p>
+<div class="flex gap-4">
+<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined" data-icon="hub">hub</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-outline-variant/30 flex justify-between items-center text-xs text-outline">
+<p>© 2024 BiproSyncLogic. All rights reserved.</p>
+<p>Stabilize. Optimize. Transform.</p>
+</div>
+</footer>
+</body></html>

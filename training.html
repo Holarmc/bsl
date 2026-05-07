@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT Training | BiproSyncLogic (BSL)</title>
+<meta content="Outcome-driven IT training for enterprise teams. Master IT Support, Cloud, Cybersecurity, and Infrastructure with BSL's hands-on lab approach." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "secondary": "#366b00",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-fixed": "#acf770",
+                    "surface": "#f8f9fa",
+                    "background": "#f8f9fa",
+                    "tertiary": "#5f5e5f",
+                    "primary-container": "#00aeef",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#0c2000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#92da57",
+                    "inverse-primary": "#82cfff",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "on-surface-variant": "#3e4850",
+                    "on-tertiary-container": "#39393a",
+                    "outline": "#6e7881",
+                    "tertiary-fixed": "#e5e2e3",
+                    "tertiary-container": "#a4a2a3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#474647",
+                    "on-primary-container": "#003e58",
+                    "surface-container": "#edeeef",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed-dim": "#82cfff",
+                    "primary-fixed": "#c6e7ff",
+                    "on-background": "#191c1d",
+                    "on-error": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "surface-tint": "#00658d",
+                    "secondary-container": "#acf770",
+                    "surface-container-highest": "#e1e3e4",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#275000",
+                    "on-primary-fixed": "#001e2d",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-container": "#3a7100",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#bdc8d1",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "primary": "#00658d",
+                    "tertiary-fixed-dim": "#c8c6c7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "section-padding": "80px"
+            },
+            "fontFamily": {
+                    "h1": ["Manrope"],
+                    "h2": ["Manrope"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h3": ["Manrope"]
+            },
+            "fontSize": {
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-surface shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<a class="font-h3 text-h3 font-extrabold text-primary" href="#">BSL</a>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Training</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all active:scale-95">Get Started</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface-container-low py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="z-10">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-label-sm font-label-sm mb-stack-md">OUTCOME-DRIVEN IT TRAINING</span>
+<h1 class="font-h1 text-h1 text-on-surface mb-stack-md">Build High-Performing IT Teams through Practical Execution.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
+                        Empower your workforce with enterprise-grade skills. Our training programs focus on job-readiness, measurable productivity improvements, and real-world incident handling.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all active:scale-95">View Program Offerings</button>
+<button class="border-2 border-on-surface text-on-surface px-8 py-4 rounded-lg font-bold hover:bg-surface-container transition-all">Schedule a Pilot</button>
+</div>
+</div>
+<div class="relative lg:h-[500px]">
+<div class="absolute inset-0 bg-primary-container/10 rounded-3xl transform rotate-3 scale-95"></div>
+<img alt="" class="w-full h-full object-cover rounded-3xl shadow-xl relative z-10" data-alt="A professional IT training environment with diverse corporate professionals engaged in high-tech digital learning. The scene features modern workstations with multiple monitors displaying complex server code and cloud architecture diagrams. Soft, vibrant lighting in corporate blue and green tones illuminates the space, creating a focused and sophisticated atmosphere. High-end photography style with shallow depth of field." src="https://lh3.googleusercontent.com/aida/ADBb0ugPUOZYfGlfAKz9JbiCntCQgRPCZH1sBkIddbVZFob-Yh-SJ3Nhma5XyPHov1HqPQ1yhPUdnA46DFhH0sorPLS65OR2QLzx4KqU8C4YWqm-hU2qVLx7GtMHDUoKprMdQdI__-YjtNdYCY9x06aCjDEC2AUki2IeQ1ANR9elDtfihRFdw6DwurnXYu9nVDZMZvYoiyQjINFjWQ1MuoSA0y-Yord-c5RoicSBSoalyKqOttrAiTm0S5J-LMfGUkzJmLrBLghg3oqp"/>
+</div>
+</div>
+</section>
+<!-- Course Bento Grid -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-h2 text-h2 text-on-surface mb-4">Program Offerings</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto font-body-md">Curricula mapped to real incident workflows and local constraints, delivered by hands-on infrastructure practitioners.</p>
+</div>
+<div class="bento-grid grid-cols-1 md:grid-cols-12">
+<!-- IT Support Foundations -->
+<div class="md:col-span-8 bg-surface-container-lowest p-stack-lg rounded-xl border-b-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col h-full justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 text-4xl">desktop_windows</span>
+<h3 class="font-h3 text-h3 mb-2">IT Support Foundations</h3>
+<p class="text-on-surface-variant mb-6">Comprehensive training covering workstations, advanced ticketing systems, and expert troubleshooting protocols. Certifiable skills for front-line reliability.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="bg-surface-container text-on-surface px-3 py-1 rounded-full text-label-sm">Certifiable</span>
+<span class="bg-surface-container text-on-surface px-3 py-1 rounded-full text-label-sm">Foundational</span>
+</div>
+</div>
+</div>
+<!-- Cloud Fundamentals -->
+<div class="md:col-span-4 bg-surface-container-lowest p-stack-lg rounded-xl border-b-4 border-primary-container shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary-container mb-4 text-4xl">cloud</span>
+<h3 class="font-h3 text-h3 mb-2">Cloud Fundamentals</h3>
+<p class="text-on-surface-variant">Master AWS, Azure, and Oracle Cloud basics. Designed for infrastructure teams moving to cloud-ready operations.</p>
+</div>
+<!-- Network Fundamentals -->
+<div class="md:col-span-4 bg-surface-container-lowest p-stack-lg rounded-xl border-b-4 border-secondary shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-secondary mb-4 text-4xl">lan</span>
+<h3 class="font-h3 text-h3 mb-2">Network Fundamentals</h3>
+<p class="text-on-surface-variant">Deep dive into switching, routing, VLANs, and basic SD-WAN implementation for resilient connectivity.</p>
+</div>
+<!-- Cybersecurity Essentials -->
+<div class="md:col-span-4 bg-surface-container-lowest p-stack-lg rounded-xl border-b-4 border-error shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-error mb-4 text-4xl">security</span>
+<h3 class="font-h3 text-h3 mb-2">Cybersecurity Essentials</h3>
+<p class="text-on-surface-variant">Proactive defense training: EDR, MFA, secure configuration, and baseline incident response strategies.</p>
+</div>
+<!-- Server Administration -->
+<div class="md:col-span-4 bg-surface-container-lowest p-stack-lg rounded-xl border-b-4 border-tertiary shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-tertiary mb-4 text-4xl">dns</span>
+<h3 class="font-h3 text-h3 mb-2">Server Admin</h3>
+<p class="text-on-surface-variant">Hands-on Linux, Windows Server, AIX, and virtualization basics for enterprise-grade management.</p>
+</div>
+<!-- Advanced SRE -->
+<div class="md:col-span-12 bg-inverse-surface text-inverse-on-surface p-stack-lg rounded-xl flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="md:w-2/3">
+<h3 class="font-h3 text-h3 mb-2">Advanced: SRE &amp; Monitoring</h3>
+<p class="text-surface-variant mb-4">Master high-level tools including Dynatrace, ManageEngine, SolarWinds, Prometheus, and Grafana for full-stack visibility and reliability engineering.</p>
+</div>
+<div class="md:w-1/3 flex justify-end">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-lg font-bold w-full md:w-auto">Request Custom Syllabus</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Target Audiences & Delivery Modes -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<!-- Target Audience -->
+<div>
+<h2 class="font-h2 text-h2 mb-stack-md">Target Audiences</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm">
+<div class="bg-primary-fixed p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary">groups</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Corporate IT Teams</h4>
+<p class="text-on-surface-variant">Infrastructure, SysAdmins, DBAs, and Telecom NOC teams looking to sharpen operational skills.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm">
+<div class="bg-secondary-container p-3 rounded-lg">
+<span class="material-symbols-outlined text-secondary">psychology</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">C-Suite Executives</h4>
+<p class="text-on-surface-variant">Dedicated AI Use Training designed for leadership to drive strategic innovation.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm">
+<div class="bg-tertiary-fixed p-3 rounded-lg">
+<span class="material-symbols-outlined text-tertiary">school</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Academic Institutions</h4>
+<p class="text-on-surface-variant">Universities and polytechnics aiming for industry-aligned vocational training.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Delivery Modes -->
+<div class="bg-primary text-on-primary p-stack-lg rounded-3xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-h2 text-h2 mb-stack-md text-white">Delivery Modes</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-lg">Onsite Instructor-Led Workshops (1–5 days)</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-lg">Virtual Instructor-Led Training (VILT)</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-lg">Blended: On-demand labs + Weekly sessions</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-lg">Corporate "Train-the-Trainer" model</span>
+</li>
+</ul>
+<div class="mt-stack-lg p-6 bg-white/10 rounded-2xl backdrop-blur-sm">
+<h4 class="font-bold mb-2">Outcome &amp; Assessment</h4>
+<p class="text-sm opacity-90">Pre/post learning assessment + practical lab evaluation. Receive training completion certificates and role-based achievement badges.</p>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -mb-32 -mr-32"></div>
+</div>
+</div>
+</section>
+<!-- Practical Labs Section -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-center gap-stack-lg">
+<div class="lg:w-1/2">
+<img alt="" class="w-full rounded-2xl shadow-lg border-8 border-white" data-alt="A detailed close-up of a high-tech laboratory workstation showing network routers, server switches, and fiber optic cabling neatly arranged for practical student training. The lighting is crisp and clean, highlighting the metallic textures and colored LEDs of the hardware. The environment conveys precision, technical mastery, and professional infrastructure standards." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+</div>
+<div class="lg:w-1/2">
+<h2 class="font-h2 text-h2 mb-stack-md">Hands-on Lab Evaluations</h2>
+<p class="text-body-lg text-on-surface-variant mb-6">
+                            We don't just lecture; we execute. Our training is centered around a robust <strong>practical lab evaluation</strong> framework. 
+                        </p>
+<div class="bg-surface-container-high p-6 rounded-xl mb-6">
+<h4 class="font-bold text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined">support_agent</span>
+                                30-Day "Phone a Trainer" Support
+                            </h4>
+<p class="text-sm text-on-surface-variant">Post-training support window for live help during real-world implementation. We ensure the learning sticks when you're back on the job.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="text-center p-4 bg-white rounded-lg border border-outline-variant">
+<span class="block text-3xl font-h1 text-secondary">99%</span>
+<span class="text-xs uppercase font-bold tracking-widest text-on-surface-variant">Lab Completion</span>
+</div>
+<div class="text-center p-4 bg-white rounded-lg border border-outline-variant">
+<span class="block text-3xl font-h1 text-primary">MTTR</span>
+<span class="text-xs uppercase font-bold tracking-widest text-on-surface-variant">Faster Resolution</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface py-section-padding border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-h2 text-h2 mb-4">Ready to build a resilient IT environment?</h2>
+<p class="text-on-surface-variant mb-stack-lg max-w-2xl mx-auto">Start with a pilot course. We'll deliver course outlines, trainer bios, and a schedule within 4 working days.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all active:scale-95">Download Training Catalog</button>
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all active:scale-95">Contact a Training Advisor</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="space-y-4">
+<h3 class="font-h3 text-h3 font-extrabold text-primary">BSL</h3>
+<p class="text-on-surface-variant text-sm">Engineering Reliable IT. Powering Business Growth through precision training and enterprise managed services.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 uppercase text-label-sm tracking-widest">Training</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">IT Support Foundations</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Cloud Fundamentals</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Network Fundamentals</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Cybersecurity Essentials</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 uppercase text-label-sm tracking-widest">Company</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 uppercase text-label-sm tracking-widest">Contact</h4>
+<p class="text-on-surface-variant text-sm mb-2 leading-relaxed">
+                    11 Coachwood Street, Northern Foreshore Estate, Chevron
+                </p>
+<p class="text-on-surface-variant text-sm mb-2">
+                    +234 905 878 8143
+                </p>
+<p class="text-primary font-bold text-sm">
+                    info@bsl.net
+                </p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-outline-variant text-center md:text-left">
+<p class="text-on-surface-variant text-sm">© 2024 BiproSyncLogic. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

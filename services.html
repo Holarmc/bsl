@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Managed Services &amp; Migration | BSL - Engineering Reliable IT</title>
+<meta content="Enterprise-grade IT Managed Services and Application &amp; Infrastructure Migration by BiproSyncLogic. 24/7 monitoring, zero data loss migration, and infrastructure modernization." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "secondary": "#366b00",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-fixed": "#acf770",
+                    "surface": "#f8f9fa",
+                    "background": "#f8f9fa",
+                    "tertiary": "#5f5e5f",
+                    "primary-container": "#00aeef",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#0c2000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#92da57",
+                    "inverse-primary": "#82cfff",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "on-surface-variant": "#3e4850",
+                    "on-tertiary-container": "#39393a",
+                    "outline": "#6e7881",
+                    "tertiary-fixed": "#e5e2e3",
+                    "tertiary-container": "#a4a2a3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#474647",
+                    "on-primary-container": "#003e58",
+                    "surface-container": "#edeeef",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed-dim": "#82cfff",
+                    "primary-fixed": "#c6e7ff",
+                    "on-background": "#191c1d",
+                    "on-error": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "surface-tint": "#00658d",
+                    "secondary-container": "#acf770",
+                    "surface-container-highest": "#e1e3e4",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#275000",
+                    "on-primary-fixed": "#001e2d",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-container": "#3a7100",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#bdc8d1",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "primary": "#00658d",
+                    "tertiary-fixed-dim": "#c8c6c7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "section-padding": "80px"
+            },
+            "fontFamily": {
+                    "h1": ["Manrope"],
+                    "h2": ["Manrope"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h3": ["Manrope"]
+            },
+            "fontSize": {
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e7e8e9 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="flex items-center gap-2">
+<span class="font-h3 text-h3 font-extrabold text-primary">BSL</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Training</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all">
+                Get Started
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="hero-gradient py-section-padding border-b border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<span class="text-primary font-bold tracking-widest text-label-sm uppercase mb-4 block">Enterprise Solutions</span>
+<h1 class="font-h1 text-h1 text-on-background mb-6">Seamless Migration &amp; Managed Excellence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+                        Transition critical applications and infrastructure with zero data loss. We provide 24/7 proactive monitoring designed for enterprise-grade reliability and mission-critical uptime.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg hover:translate-y-[-2px] transition-transform">
+                            Free Readiness Assessment
+                        </button>
+<button class="border-2 border-on-background text-on-background px-8 py-4 rounded-lg font-bold hover:bg-surface-container transition-colors">
+                            Service Catalog
+                        </button>
+</div>
+</div>
+<div class="relative">
+<img alt="Modern server room" class="rounded-xl shadow-2xl w-full aspect-square object-cover" data-alt="A highly detailed, professional photograph of a modern enterprise data center with rows of sleek black server racks. The cooling lights emit a soft blue glow reflecting on the polished concrete floor, creating a sophisticated and technologically advanced atmosphere. The lighting is crisp and high-end, emphasizing precision and clean architectural lines in a corporate IT environment." src="https://lh3.googleusercontent.com/aida/ADBb0ugPUOZYfGlfAKz9JbiCntCQgRPCZH1sBkIddbVZFob-Yh-SJ3Nhma5XyPHov1HqPQ1yhPUdnA46DFhH0sorPLS65OR2QLzx4KqU8C4YWqm-hU2qVLx7GtMHDUoKprMdQdI__-YjtNdYCY9x06aCjDEC2AUki2IeQ1ANR9elDtfihRFdw6DwurnXYu9nVDZMZvYoiyQjINFjWQ1MuoSA0y-Yord-c5RoicSBSoalyKqOttrAiTm0S5J-LMfGUkzJmLrBLghg3oqp"/>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl border border-outline-variant/30 hidden lg:block">
+<div class="flex items-center gap-4 mb-2">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="check_circle" data-weight="fill">check_circle</span>
+<div>
+<p class="font-h3 text-h3 text-on-background">99.5%</p>
+<p class="text-label-sm text-on-surface-variant uppercase">Uptime Guaranteed</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Managed Services Bento Section -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-on-background mb-4">IT Managed Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
+                        Proactive, end-to-end management of your IT infrastructure. We act as your outsourced IT department, freeing you to focus on business growth.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border-b-4 border-primary hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="monitoring">monitoring</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-4">24/7 NOC Monitoring</h3>
+<p class="text-on-surface-variant mb-6">Proactive monitoring of networks, servers, and endpoints to detect and resolve issues before they impact operations.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-on-surface text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+                                Real-time alerting
+                            </li>
+<li class="flex items-center gap-2 text-on-surface text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+                                Performance tracking
+                            </li>
+</ul>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border-b-4 border-secondary hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="cloud_sync">cloud_sync</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-4">Server &amp; Virtualization</h3>
+<p class="text-on-surface-variant mb-6">Expert management of VMware, Hyper-V, and Linux environments to ensure peak efficiency and stability.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-on-surface text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+                                Resource optimization
+                            </li>
+<li class="flex items-center gap-2 text-on-surface text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+                                Hypervisor hardening
+                            </li>
+</ul>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border-b-4 border-primary-container hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary-container" data-icon="security">security</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-background mb-4">Backup &amp; Disaster Recovery</h3>
+<p class="text-on-surface-variant mb-6">Robust off-site, cloud, and hybrid replication strategies to protect your mission-critical data assets.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-on-surface text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+                                RPO/RTO optimization
+                            </li>
+<li class="flex items-center gap-2 text-on-surface text-body-md">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="check">check</span>
+                                Regular recovery testing
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Migration Services Detail -->
+<section class="py-section-padding bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-4 rounded-2xl shadow-sm space-y-4">
+<div class="bg-surface-container p-2 rounded-lg w-fit">
+<img alt="Migration logo 1" class="h-10 object-contain" data-alt="A clean, minimalist logo of a leading cloud provider like AWS or Azure, rendered in professional vector style against a soft light-gray background. The image is designed to represent enterprise technology partnerships with a focus on cloud infrastructure and reliability." src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"/>
+</div>
+<h4 class="font-bold text-primary">Cloud Hybrid</h4>
+<p class="text-label-sm text-on-surface-variant">Seamless cross-cloud transitions between AWS, Azure, and Google Cloud.</p>
+</div>
+<div class="bg-white p-4 rounded-2xl shadow-sm space-y-4 mt-8">
+<div class="bg-surface-container p-2 rounded-lg w-fit">
+<img alt="Migration logo 2" class="h-10 object-contain" data-alt="A professional icon or logo representing virtualization software like VMware or Oracle, displayed with high contrast and sharp edges. The visual is placed on a clean white card, embodying the technical mastery required for complex server migrations in a corporate IT setting." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+</div>
+<h4 class="font-bold text-secondary">Virtualization</h4>
+<p class="text-label-sm text-on-surface-variant">Zero-disruption migration from legacy IBM and Oracle infrastructure.</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="bg-secondary/10 text-secondary px-4 py-1 rounded-full text-label-sm font-bold mb-4 inline-block">Migration Services</span>
+<h2 class="font-h2 text-h2 text-on-background mb-6">Enterprise Infrastructure Transition</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            We help enterprise organizations seamlessly migrate critical applications and infrastructure with minimal downtime and zero data loss. Our engineers leverage specialized domain expertise across complex environments.
+                        </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-label-sm">1</div>
+<div>
+<h4 class="font-bold text-on-background">Discovery &amp; Assessment</h4>
+<p class="text-on-surface-variant">Mapping dependencies and performance baselines to mitigate operational risk.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-label-sm">2</div>
+<div>
+<h4 class="font-bold text-on-background">Execution Discipline</h4>
+<p class="text-on-surface-variant">Controlled migration using automated tools across IBM, Oracle, and VMware.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-label-sm">3</div>
+<div>
+<h4 class="font-bold text-on-background">Validation &amp; Optimization</h4>
+<p class="text-on-surface-variant">Post-migration tuning to ensure faster time-to-value for new infrastructure.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Impact / Delivery Stats -->
+<section class="py-section-padding bg-on-background text-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="max-w-md">
+<h2 class="font-h2 text-h2 mb-4">The BSL Business Impact</h2>
+<p class="text-outline-variant font-body-lg">Measurable outcomes that drive corporate efficiency and long-term cost reduction.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-8">
+<div>
+<p class="text-primary-container text-h1 font-h1">Zero</p>
+<p class="text-label-sm uppercase tracking-widest text-outline-variant">Data Loss Recorded</p>
+</div>
+<div>
+<p class="text-secondary-fixed text-h1 font-h1">&lt;30m</p>
+<p class="text-label-sm uppercase tracking-widest text-outline-variant">Critical Response Time</p>
+</div>
+<div>
+<p class="text-primary-container text-h1 font-h1">24/7</p>
+<p class="text-label-sm uppercase tracking-widest text-outline-variant">Global Monitoring</p>
+</div>
+<div>
+<p class="text-secondary-fixed text-h1 font-h1">100%</p>
+<p class="text-label-sm uppercase tracking-widest text-outline-variant">SLA Compliance</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What We Deliver (Detailed List) -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-surface-container-low p-stack-lg md:p-12 rounded-3xl border border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h3 class="font-h2 text-h2 text-on-background mb-8">What we deliver</h3>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="task_alt">task_alt</span>
+<div>
+<p class="font-bold text-on-background">End-to-end migration management</p>
+<p class="text-label-sm text-on-surface-variant">Planning, execution, and 24/7 post-migration support.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="task_alt">task_alt</span>
+<div>
+<p class="font-bold text-on-background">Application Modernization</p>
+<p class="text-label-sm text-on-surface-variant">Rehosting, replatforming, or refactoring monoliths to microservices.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="task_alt">task_alt</span>
+<div>
+<p class="font-bold text-on-background">Data Integrity Validation</p>
+<p class="text-label-sm text-on-surface-variant">Ensuring consistency and accuracy through replication tools.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary text-white p-10 rounded-2xl flex flex-col justify-center">
+<h3 class="font-h3 text-h3 mb-6">Why BSL?</h3>
+<p class="mb-8 text-on-primary/80">Our local delivery model combined with international best practices ensures your IT operations remain resilient while controlling costs.</p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="verified">verified</span>
+                                    Expertise across IBM, Oracle &amp; VMware
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="verified">verified</span>
+                                    Proven Enterprise-grade Track Record
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="verified">verified</span>
+                                    Focus on Uptime &amp; Predictable ROI
+                                </li>
+</ul>
+<button class="bg-white text-primary px-8 py-3 rounded-lg font-bold w-full md:w-fit hover:bg-opacity-90 transition-all">
+                                Request Discovery Call
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Training Teaser -->
+<section class="pb-section-padding">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-8 items-center bg-secondary-container p-stack-lg rounded-3xl">
+<div class="md:w-1/3">
+<img alt="Training session" class="rounded-2xl w-full aspect-video md:aspect-square object-cover" data-alt="A professional instructor-led corporate IT training session in a brightly lit, modern classroom. The participants are engaged with high-end workstations, while the instructor points to a digital presentation showcasing complex network architectures. The lighting is natural and bright, conveying an atmosphere of learning, professional development, and technological empowerment." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+</div>
+<div class="md:w-2/3 md:pl-8">
+<h3 class="font-h3 text-h3 text-on-secondary-fixed mb-4">Empower Your Technical Team</h3>
+<p class="text-on-secondary-container mb-6 font-body-md">Build high-performing teams with our practical, hands-on training programs in Cloud, Cybersecurity, and Infrastructure Management. Certifiable courses tailored for C-Suite and technical staff.</p>
+<a class="inline-flex items-center gap-2 text-on-secondary-fixed font-bold border-b-2 border-on-secondary-fixed pb-1 hover:opacity-70 transition-all" href="#">
+                            View Course Catalog
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-padding bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-h1 text-h1 mb-6 text-on-background">Ready to transform your IT?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">Partner with us to build a resilient, secure, and high-performing technology environment. Let's start with a free readiness assessment.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-transform">Schedule Consultation</button>
+<button class="bg-white border-2 border-outline text-on-surface px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container transition-colors">Contact Us Today</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-lowest w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="md:col-span-1">
+<span class="font-h3 text-h3 font-extrabold text-primary mb-6 block">BSL</span>
+<p class="text-on-surface-variant text-body-md">Engineering Reliable IT. Powering Business Growth. Your partner for resilient, future-ready technology services.</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Our Services</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Managed Services</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Cloud Migration</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">IT Support</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Technical Training</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Contact Info</h4>
+<p class="text-on-surface-variant text-body-md mb-2">11 Coachwood Street, Northern Foreshore Estate, Chevron</p>
+<p class="text-on-surface-variant text-body-md mb-2">+234 905 878 8143</p>
+<p class="text-on-surface-variant text-body-md">info@bsl.net</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Legal</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-8 text-center">
+<p class="text-on-surface-variant text-body-md">© 2024 BiproSyncLogic. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
