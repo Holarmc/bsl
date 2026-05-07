@@ -129,33 +129,179 @@
 </nav>
 </header> -->
 <header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
-<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
 
-<div class="flex items-center gap-md">
-    <a href="/">
-    <img alt="BiproSyncLogic Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"/></a>
-<!-- <span class="font-h3 text-h3 text-primary-container tracking-tight">BiproSyncLogic</span> -->
-</div>
-<!-- <div class="flex items-center gap-2">
-<span class="font-h3 text-h3 font-extrabold text-primary">BSL</span>
-</div> -->
-<div class="hidden md:flex items-center gap-stack-lg">
-<!-- <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="/">Home</a> -->
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/about-us.html">About Us</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/services.html">Services</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/training.html">Training</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/contacts.html">Contact</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
-                    Get Started
-                </button>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
+    <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-md">
+            <a href="/">
+                <img 
+                    alt="BiproSyncLogic Logo"
+                    class="h-10 w-auto"
+                    src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"
+                />
+            </a>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-stack-lg">
+            <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/about-us.html">
+                About Us
+            </a>
+
+            <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/services.html">
+                Services
+            </a>
+
+            <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/training.html">
+                Training
+            </a>
+
+            <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/contacts.html">
+                Contact
+            </a>
+        </div>
+
+        <!-- CTA + Mobile Menu Button -->
+        <div class="flex items-center gap-4">
+
+            <button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
+                Get Started
+            </button>
+
+            <!-- Hamburger -->
+            <button 
+                id="menu-btn"
+                class="md:hidden text-on-surface"
+            >
+                <span class="material-symbols-outlined text-[32px]">
+                    menu
+                </span>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div 
+        id="mobile-overlay"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 invisible transition-all duration-300 z-40"
+    ></div>
+
+    <!-- Mobile Sidebar -->
+    <aside 
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-screen w-[85%] max-w-[340px] bg-surface shadow-2xl translate-x-full transition-transform duration-300 z-50 flex flex-col"
+    >
+
+        <!-- Sidebar Header -->
+        <div class="flex justify-between items-center p-6 border-b border-outline-variant">
+
+            <img 
+                alt="BSL Logo"
+                class="h-10 w-auto"
+                src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"
+            />
+
+            <button 
+                id="close-menu"
+                class="text-on-surface"
+            >
+                <span class="material-symbols-outlined text-[30px]">
+                    close
+                </span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Links -->
+        <div class="flex flex-col p-6 gap-2">
+
+            <a 
+                href="/about-us.html"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>About Us</span>
+
+               <!--  <span class="material-symbols-outlined text-[18px]">
+                    arrow_forward_ios
+                </span> -->
+            </a>
+
+            <a 
+                href="/services.html"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>Services</span>
+
+               <!--  <span class="material-symbols-outlined text-[18px]">
+                    arrow_forward_ios
+                </span> -->
+            </a>
+
+            <a 
+                href="/training.html"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>Training</span>
+
+               <!--  <span class="material-symbols-outlined text-[18px]">
+                    arrow_forward_ios
+                </span> -->
+            </a>
+
+            <a 
+                href="/contacts.html"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>Contact</span>
+
+               <!--  <span class="material-symbols-outlined text-[18px]">
+                    arrow_forward_ios
+                </span> -->
+            </a>
+
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="mt-auto p-6 border-t border-outline-variant">
+
+            <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+                Get Started
+            </button>
+
+        </div>
+
+    </aside>
+
 </header>
+
+<!-- Mobile Menu Script -->
+<script>
+
+    const menuBtn = document.getElementById("menu-btn");
+    const closeMenu = document.getElementById("close-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileOverlay = document.getElementById("mobile-overlay");
+
+    function openMenu() {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileOverlay.classList.remove("opacity-0", "invisible");
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add("translate-x-full");
+        mobileOverlay.classList.add("opacity-0", "invisible");
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+
+    closeMenu.addEventListener("click", closeMobileMenu);
+
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+
+</script>
 <main>
 <!-- Hero Section / Header -->
 <section class="relative bg-on-primary py-section-padding overflow-hidden">
