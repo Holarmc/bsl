@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Oracle Enterprise DBA Course | BiproSyncLogic</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
@@ -14,124 +13,170 @@
         theme: {
           extend: {
             "colors": {
-                    "background": "#0f131d",
-                    "surface-tint": "#82cfff",
-                    "secondary-fixed-dim": "#80dc57",
-                    "secondary-container": "#4ba424",
-                    "primary-fixed": "#c6e7ff",
+                    "on-error-container": "#93000a",
+                    "secondary": "#366b00",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-fixed": "#acf770",
+                    "surface": "#f8f9fa",
+                    "background": "#f8f9fa",
+                    "tertiary": "#5f5e5f",
                     "primary-container": "#00aeef",
-                    "tertiary": "#c0c6db",
-                    "surface-dim": "#0f131d",
-                    "inverse-on-surface": "#2c303b",
-                    "secondary": "#80dc57",
-                    "primary": "#82cfff",
-                    "tertiary-fixed-dim": "#c0c6db",
-                    "on-secondary-fixed-variant": "#1a5200",
-                    "tertiary-fixed": "#dce2f7",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#0c2000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#92da57",
+                    "inverse-primary": "#82cfff",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "on-surface-variant": "#3e4850",
+                    "on-tertiary-container": "#39393a",
+                    "outline": "#6e7881",
+                    "tertiary-fixed": "#e5e2e3",
+                    "tertiary-container": "#a4a2a3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#474647",
                     "on-primary-container": "#003e58",
-                    "on-error-container": "#ffdad6",
-                    "error": "#ffb4ab",
-                    "on-secondary": "#0f3900",
-                    "tertiary-container": "#9ca3b7",
-                    "on-tertiary-fixed": "#141b2b",
-                    "on-secondary-container": "#0c3100",
-                    "on-primary-fixed": "#001e2d",
-                    "inverse-surface": "#dfe2f1",
-                    "on-secondary-fixed": "#062100",
-                    "on-error": "#690005",
-                    "surface-container-lowest": "#0a0e18",
-                    "surface-container-highest": "#313540",
-                    "on-tertiary-container": "#32394a",
-                    "surface-variant": "#313540",
-                    "on-primary-fixed-variant": "#004c6b",
-                    "inverse-primary": "#00658d",
-                    "surface-container-low": "#171b26",
-                    "outline-variant": "#3e4850",
-                    "secondary-fixed": "#9bfa70",
-                    "surface-bright": "#353944",
+                    "surface-container": "#edeeef",
+                    "surface-bright": "#f8f9fa",
                     "primary-fixed-dim": "#82cfff",
-                    "on-surface": "#dfe2f1",
-                    "outline": "#87929b",
-                    "on-background": "#dfe2f1",
-                    "surface": "#0f131d",
-                    "surface-container": "#1c1f2a",
-                    "on-tertiary-fixed-variant": "#404758",
-                    "on-surface-variant": "#bdc8d1",
-                    "surface-container-high": "#262a35",
-                    "on-tertiary": "#293040",
-                    "error-container": "#93000a",
-                    "on-primary": "#00344b"
+                    "primary-fixed": "#c6e7ff",
+                    "on-background": "#191c1d",
+                    "on-error": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "surface-tint": "#00658d",
+                    "secondary-container": "#acf770",
+                    "surface-container-highest": "#e1e3e4",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#275000",
+                    "on-primary-fixed": "#001e2d",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-container": "#3a7100",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#bdc8d1",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "primary": "#00658d",
+                    "tertiary-fixed-dim": "#c8c6c7"
             },
             "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
             },
             "spacing": {
-                    "unit": "4px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "section-padding": "80px",
                     "xxl": "80px",
                     "lg": "24px",
                     "xl": "48px",
-                    "margin-page": "64px",
                     "xs": "4px",
                     "sm": "8px",
-                    "gutter": "24px",
                     "md": "16px"
             },
             "fontFamily": {
-                    "label-caps": ["Inter"],
-                    "body-md": ["Inter"],
+                    "h1": ["Manrope"],
                     "h2": ["Manrope"],
+                    "label-sm": ["Inter"],
+                    "label-caps": ["Inter"],
                     "body-lg": ["Inter"],
-                    "h3": ["Manrope"],
-                    "h1": ["Manrope"]
+                    "body-md": ["Inter"],
+                    "h3": ["Manrope"]
             },
             "fontSize": {
-                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
                     "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                    "h3": ["24px", {"lineHeight": "1.3", "letterSpacing": "0em", "fontWeight": "700"}],
-                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
             }
           },
         },
       }
     </script>
 <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(130, 207, 255, 0.2);
-        }
-        .neon-border {
-            border: 1px solid rgba(0, 174, 239, 0.4);
-            box-shadow: 0 0 15px rgba(0, 174, 239, 0.1);
-        }
-        .progress-gradient {
-            background: linear-gradient(90deg, #82cfff 0%, #80dc57 100%);
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
+    .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .dark .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(130, 207, 255, 0.2);
+    }
+    .neon-border {
+        border: 1px solid rgba(0, 101, 141, 0.2);
+        box-shadow: 0 0 15px rgba(0, 101, 141, 0.05);
+    }
+    .dark .neon-border {
+        border: 1px solid rgba(0, 174, 239, 0.4);
+        box-shadow: 0 0 15px rgba(0, 174, 239, 0.1);
+    }
+    .progress-gradient {
+        background: linear-gradient(90deg, #00658d 0%, #366b00 100%);
+    }
+    .dark .progress-gradient {
+        background: linear-gradient(90deg, #82cfff 0%, #80dc57 100%);
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Dark mode overrides */
+    .dark {
+        --background: #0f131d;
+        --surface: #0f131d;
+        --surface-container: #1c1f2a;
+        --surface-container-low: #171b26;
+        --surface-container-lowest: #0a0e18;
+        --surface-container-high: #262a35;
+        --surface-container-highest: #313540;
+        --on-surface: #dfe2f1;
+        --on-surface-variant: #bdc8d1;
+        --on-background: #dfe2f1;
+        --primary: #82cfff;
+        --primary-container: #00aeef;
+        --on-primary: #00344b;
+        --secondary: #80dc57;
+        --outline: #87929b;
+        --outline-variant: #3e4850;
+    }
+    html.dark body {
+        background-color: #0f131d;
+        color: #dfe2f1;
+    }
+    html.dark .bg-background { background-color: #0f131d; }
+    html.dark .bg-surface { background-color: #0f131d; }
+    html.dark .bg-surface-container { background-color: #1c1f2a; }
+    html.dark .bg-surface-container-low { background-color: #171b26; }
+    html.dark .bg-surface-container-lowest { background-color: #0a0e18; }
+    html.dark .bg-surface-container-high { background-color: #262a35; }
+    html.dark .bg-surface-container-highest { background-color: #313540; }
+    html.dark .text-on-surface { color: #dfe2f1; }
+    html.dark .text-on-surface-variant { color: #bdc8d1; }
+    html.dark .text-on-background { color: #dfe2f1; }
+    html.dark .text-primary { color: #82cfff; }
+    html.dark .text-secondary { color: #80dc57; }
+    html.dark .border-outline-variant { border-color: #3e4850; }
+    html.dark .border-white\/5 { border-color: rgba(255, 255, 255, 0.05); }
+    html.dark .border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }
+    html.dark .hover\:bg-white\/5:hover { background-color: rgba(255, 255, 255, 0.05); }
+    html.dark .hover\:bg-primary\/10:hover { background-color: rgba(130, 207, 255, 0.1); }
+</style>
 </head>
-<body class="bg-background text-on-surface font-body-md selection:bg-primary/30">
-<!-- Top Navigation -->
-<<!-- nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-sm">
-<div class="flex justify-between items-center h-20 px-gutter max-w-[1280px] mx-auto">
-<div class="font-h3 text-h3 text-primary-container tracking-tight">BiproSyncLogic</div>
-<div class="hidden md:flex gap-lg items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">About Us</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Services</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Training</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Contact</a>
-</div>
-<button class="bg-primary-container text-on-primary-container px-lg py-sm rounded-lg font-bold active:scale-95 transition-transform">Get Started</button>
-</div>
-</nav> -->
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
 
 <header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
 
@@ -158,7 +203,7 @@
                 Services
             </a>
 
-            <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/training.html">
+            <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="/training.html">
                 Training
             </a>
 
@@ -167,8 +212,22 @@
             </a>
         </div>
 
-        <!-- CTA + Mobile Menu Button -->
+        <!-- CTA + Theme Toggle + Mobile Menu Button -->
         <div class="flex items-center gap-4">
+
+            <!-- Theme Toggle Button -->
+            <button 
+                id="theme-toggle"
+                class="p-2 rounded-lg hover:bg-surface-container transition-colors"
+                aria-label="Toggle dark mode"
+            >
+                <span id="theme-icon-light" class="material-symbols-outlined text-[24px]">
+                    dark_mode
+                </span>
+                <span id="theme-icon-dark" class="material-symbols-outlined text-[24px] hidden">
+                    light_mode
+                </span>
+            </button>
 
             <button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
                 Get Started
@@ -228,10 +287,6 @@
                 class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
             >
                 <span>About Us</span>
-
-               <!--  <span class="material-symbols-outlined text-[18px]">
-                    arrow_forward_ios
-                </span> -->
             </a>
 
             <a 
@@ -239,10 +294,6 @@
                 class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
             >
                 <span>Services</span>
-
-               <!--  <span class="material-symbols-outlined text-[18px]">
-                    arrow_forward_ios
-                </span> -->
             </a>
 
             <a 
@@ -250,10 +301,6 @@
                 class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
             >
                 <span>Training</span>
-
-               <!--  <span class="material-symbols-outlined text-[18px]">
-                    arrow_forward_ios
-                </span> -->
             </a>
 
             <a 
@@ -261,11 +308,18 @@
                 class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
             >
                 <span>Contact</span>
-
-               <!--  <span class="material-symbols-outlined text-[18px]">
-                    arrow_forward_ios
-                </span> -->
             </a>
+
+            <!-- Mobile Theme Toggle -->
+            <button 
+                id="mobile-theme-toggle"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>Toggle Theme</span>
+                <span class="material-symbols-outlined text-[20px]">
+                    contrast
+                </span>
+            </button>
 
         </div>
 
@@ -307,17 +361,52 @@
     mobileOverlay.addEventListener("click", closeMobileMenu);
 
 </script>
-<main class="pt-20">
+
+<!-- Theme Toggle Script -->
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
+    const themeIconLight = document.getElementById("theme-icon-light");
+    const themeIconDark = document.getElementById("theme-icon-dark");
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        html.classList.add("dark");
+        themeIconLight.classList.add("hidden");
+        themeIconDark.classList.remove("hidden");
+    }
+
+    function toggleTheme() {
+        html.classList.toggle("dark");
+        const isDark = html.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        
+        if (isDark) {
+            themeIconLight.classList.add("hidden");
+            themeIconDark.classList.remove("hidden");
+        } else {
+            themeIconLight.classList.remove("hidden");
+            themeIconDark.classList.add("hidden");
+        }
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+    mobileThemeToggle.addEventListener("click", toggleTheme);
+</script>
+
+<main class="pt-8">
 <!-- Hero Section -->
 <section class="relative min-h-[500px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent z-10"></div>
-<img class="w-full h-full object-cover opacity-40" data-alt="A cinematic, high-contrast photograph of a sleek, futuristic server room at night. Deep blue and green ambient lights trace the edges of server racks, creating a sophisticated technical atmosphere. The lighting is low-key with sharp neon accents, emphasizing the precision of enterprise-grade hardware. The perspective leads deep into the data center, evoking a sense of scale and institutional power." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzYlOQEpuIA5JF0BmkSrwsacpYoJtRgejt0IVgTZoLztWOAFKOrbNIudnbf6Mqdp-BsWUo5q_CEron8kL4uPosGXV89y8Jybe3d0HAZEYoiktkGo4p_P1A7oruGYTUWkfdHbKlmcY1RS8n2yCv3xNDrq-t3BzN9-txI7gOtVn_TCr2cY2QQ1fQcgTvpwUcxU6l45Q_dUu42_E2sdv65m3tesCBTiFnUvOKofSyt0Vx06jqQ4ZQYSX2B938QhfFPhloKFvFqNPW3Tc"/>
+<img class="w-full h-full object-cover opacity-30" alt="Server room with blue and green lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzYlOQEpuIA5JF0BmkSrwsacpYoJtRgejt0IVgTZoLztWOAFKOrbNIudnbf6Mqdp-BsWUo5q_CEron8kL4uPosGXV89y8Jybe3d0HAZEYoiktkGo4p_P1A7oruGYTUWkfdHbKlmcY1RS8n2yCv3xNDrq-t3BzN9-txI7gOtVn_TCr2cY2QQ1fQcgTvpwUcxU6l45Q_dUu42_E2sdv65m3tesCBTiFnUvOKofSyt0Vx06jqQ4ZQYSX2B938QhfFPhloKFvFqNPW3Tc"/>
 </div>
-<div class="relative z-20 max-w-[1280px] mx-auto px-gutter w-full py-xl">
+<div class="relative z-20 max-w-container-max mx-auto px-margin-desktop w-full py-xl">
 <div class="max-w-3xl">
 <div class="flex items-center gap-sm mb-md">
-<span class="bg-secondary/20 text-secondary border border-secondary/40 px-sm py-1 rounded-sm text-label-caps font-label-caps uppercase">Advanced</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm uppercase">Advanced</span>
 <div class="flex items-center text-primary">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="ml-1 font-bold">4.9/5</span>
@@ -328,20 +417,21 @@
 <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mb-lg">
                         Master the complexities of the Oracle ecosystem. From deep-dive architecture to high-availability RAC clusters, become an elite DBA capable of managing mission-critical enterprise environments.
                     </p>
-<div class="text-h2 font-h2 text-primary-container mb-xl">$1,200 <span class="text-body-md font-normal text-on-surface-variant">/ Full Certification Track</span></div>
+<div class="text-h2 font-h2 text-primary mb-xl">$1,200 <span class="text-body-md font-normal text-on-surface-variant">/ Full Certification Track</span></div>
 </div>
 </div>
 </section>
+
 <!-- Main Content & Sidebar Layout -->
-<section class="max-w-[1280px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-xl py-xxl">
+<section class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-xl py-section-padding">
 <!-- Sidebar (Desktop Right, Mobile Top) -->
 <aside class="lg:col-span-4 order-1 lg:order-2">
 <div class="sticky top-24 space-y-lg">
 <!-- CTA Card -->
 <div class="glass-card p-lg rounded-xl neon-border">
-<button class="w-full bg-primary-container text-on-primary-container py-md rounded-lg font-h3 text-h3 active:scale-95 transition-transform mb-md">Enroll Now</button>
+<button class="w-full bg-primary text-on-primary py-md rounded-lg font-h3 text-h3 active:scale-95 transition-transform mb-md">Enroll Now</button>
 <p class="text-center text-on-surface-variant text-body-md mb-lg">Secure your spot for the next cohort starting Oct 15th.</p>
-<div class="space-y-md border-t border-white/10 pt-lg">
+<div class="space-y-md border-t border-outline-variant pt-lg">
 <div class="flex items-center gap-md">
 <span class="material-symbols-outlined text-primary">schedule</span>
 <div>
@@ -366,7 +456,7 @@
 </div>
 </div>
 <!-- Who this is for -->
-<div class="bg-surface-container-low p-lg rounded-xl border border-white/5">
+<div class="bg-surface-container-low p-lg rounded-xl border border-outline-variant">
 <h3 class="font-h3 text-h3 mb-md">Who this is for</h3>
 <ul class="space-y-sm">
 <li class="flex items-start gap-sm text-on-surface-variant">
@@ -389,19 +479,19 @@
 </div>
 </div>
 </aside>
+
 <!-- Main Curriculum Content -->
 <div class="lg:col-span-8 order-2 lg:order-1 space-y-xxl">
 <!-- Curriculum Modules -->
 <div>
 <h2 class="font-h2 text-h2 mb-xl border-l-4 border-primary pl-md">Comprehensive Curriculum</h2>
 <div class="space-y-md">
-<!-- Module Loop (Abstracted for brevity, but all 12 modules represented) -->
 <!-- Oracle DBA Curriculum Accordion -->
 <div class="space-y-md">
 
     <!-- Module 1 -->
     <div class="glass-card rounded-xl overflow-hidden group accordion-item">
-        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-white/5 transition-colors">
+        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-surface-container transition-colors">
             <div class="flex items-center gap-lg text-left">
                 <span class="text-h3 font-h3 text-primary/40">01</span>
 
@@ -421,66 +511,54 @@
             </span>
         </button>
 
-        <div class="accordion-content hidden px-lg pb-lg border-t border-white/5">
-           <!--  <ul class="grid grid-cols-1 md:grid-cols-2 gap-md text-body-md text-on-surface-variant pt-md">
-                <li>• Introduction to databases and RDBMS concepts</li>
-                <li>• Tables, keys, normalization, ACID & transactions</li>
-                <li>• Oracle DBA roles and responsibilities</li>
-                <li>• Oracle editions, licensing & enterprise features</li>
-                <li>• SQL fundamentals (DDL, DML, joins, subqueries)</li>
-                <li>• Introduction to PL/SQL</li>
-                <li>• Relational vs NoSQL concepts</li>
-                <li>• SQL*Plus, SQL Developer & OEM tools</li>
-                <li>• Labs: Sample schemas and query execution</li>
-            </ul> -->
-
+        <div class="accordion-content hidden px-lg pb-lg border-t border-outline-variant">
         <div class="p-lg space-y-xs">
         <!-- Item -->
-        <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+        <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">database</span>
         <div>
             <h5>Introduction to Databases & RDBMS Concepts</h5>
-            <p>Core relational database concepts including tables, keys, normalization, ACID compliance, and transaction management.</p>
+            <p class="text-on-surface-variant">Core relational database concepts including tables, keys, normalization, ACID compliance, and transaction management.</p>
         </div>
         </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">admin_panel_settings</span>
         <div>
             <h5>Oracle DBA Roles & Responsibilities</h5>
-            <p>Daily operational responsibilities covering monitoring, security, compliance, maintenance, and enterprise support.</p>
+            <p class="text-on-surface-variant">Daily operational responsibilities covering monitoring, security, compliance, maintenance, and enterprise support.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">license</span>
         <div>
             <h5>Oracle Database Editions & Licensing</h5>
-            <p>Overview of Oracle Standard and Enterprise editions alongside RAC, Data Guard, and enterprise feature sets.</p>
+            <p class="text-on-surface-variant">Overview of Oracle Standard and Enterprise editions alongside RAC, Data Guard, and enterprise feature sets.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">code</span>
         <div>
             <h5>SQL & PL/SQL Fundamentals</h5>
-            <p>Foundational SQL querying, DDL/DML operations, joins, functions, procedures, and PL/SQL programming basics.</p>
+            <p class="text-on-surface-variant">Foundational SQL querying, DDL/DML operations, joins, functions, procedures, and PL/SQL programming basics.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">hub</span>
         <div>
             <h5>Relational vs NoSQL Systems</h5>
-            <p>Comparison of structured relational systems with modern NoSQL approaches and Oracle hybrid capabilities.</p>
+            <p class="text-on-surface-variant">Comparison of structured relational systems with modern NoSQL approaches and Oracle hybrid capabilities.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row border-none flex items-start gap-md py-md hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row border-none flex items-start gap-md py-md hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">terminal</span>
         <div>
             <h5>Oracle Administration Tools</h5>
-            <p>Hands-on exposure to SQL*Plus, SQL Developer, SQLcl, and Oracle Enterprise Manager.</p>
+            <p class="text-on-surface-variant">Hands-on exposure to SQL*Plus, SQL Developer, SQLcl, and Oracle Enterprise Manager.</p>
         </div>
     </div>
 </div>
@@ -488,12 +566,11 @@
     </div>
         </div>
     </div>
-</div>
 
 
     <!-- Module 2 -->
     <div class="glass-card rounded-xl overflow-hidden group accordion-item">
-        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-white/5 transition-colors">
+        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-surface-container transition-colors">
             <div class="flex items-center gap-lg text-left">
                 <span class="text-h3 font-h3 text-primary/40">02</span>
 
@@ -513,65 +590,54 @@
             </span>
         </button>
 
-        <div class="accordion-content hidden px-lg pb-lg border-t border-white/5">
-            <!-- <ul class="grid grid-cols-1 md:grid-cols-2 gap-md text-body-md text-on-surface-variant pt-md">
-                <li>• Database vs Instance architecture</li>
-                <li>• SGA, PGA & process memory</li>
-                <li>• Background processes (LGWR, DBWn, SMON)</li>
-                <li>• Physical storage structures</li>
-                <li>• Tablespaces, extents & blocks</li>
-                <li>• Multitenant architecture (CDB/PDB)</li>
-                <li>• ASM storage fundamentals</li>
-                <li>• Labs: V$ views and architecture exploration</li>
-            </ul> -->
-
+        <div class="accordion-content hidden px-lg pb-lg border-t border-outline-variant">
             <div class="p-lg space-y-xs">
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">memory</span>
         <div>
             <h5>Database vs Instance Architecture</h5>
-            <p>Understand the distinction between Oracle database structures and running database instances.</p>
+            <p class="text-on-surface-variant">Understand the distinction between Oracle database structures and running database instances.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">developer_board</span>
         <div>
             <h5>Memory Structures & SGA Components</h5>
-            <p>Comprehensive study of SGA, PGA, Shared Pool, Buffer Cache, Redo Buffer, and process memory allocation.</p>
+            <p class="text-on-surface-variant">Comprehensive study of SGA, PGA, Shared Pool, Buffer Cache, Redo Buffer, and process memory allocation.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">settings_suggest</span>
         <div>
             <h5>Background & Foreground Processes</h5>
-            <p>Deep dive into DBWn, LGWR, SMON, PMON, ARCn, and Oracle process coordination.</p>
+            <p class="text-on-surface-variant">Deep dive into DBWn, LGWR, SMON, PMON, ARCn, and Oracle process coordination.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">storage</span>
         <div>
             <h5>Physical & Logical Storage Structures</h5>
-            <p>Learn datafiles, control files, redo logs, tablespaces, extents, segments, and Oracle block architecture.</p>
+            <p class="text-on-surface-variant">Learn datafiles, control files, redo logs, tablespaces, extents, segments, and Oracle block architecture.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row flex items-start gap-md py-md border-b border-white/5 hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row flex items-start gap-md py-md border-b border-outline-variant hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">account_tree</span>
         <div>
             <h5>Multitenant Architecture (CDB/PDB)</h5>
-            <p>Enterprise multitenant database administration with CDB$ROOT, PDBs, and application containers.</p>
+            <p class="text-on-surface-variant">Enterprise multitenant database administration with CDB$ROOT, PDBs, and application containers.</p>
         </div>
     </div>
 
-    <div class="accordion-item-row border-none flex items-start gap-md py-md hover:bg-white/[0.03] transition-colors rounded-lg px-sm">
+    <div class="accordion-item-row border-none flex items-start gap-md py-md hover:bg-surface-container transition-colors rounded-lg px-sm">
         <span class="material-symbols-outlined text-primary">dns</span>
         <div>
             <h5>ASM Storage Fundamentals</h5>
-            <p>Introduction to Automatic Storage Management and Oracle storage abstraction techniques.</p>
+            <p class="text-on-surface-variant">Introduction to Automatic Storage Management and Oracle storage abstraction techniques.</p>
         </div>
     </div>
 
@@ -581,7 +647,7 @@
 
     <!-- Module 3 -->
     <div class="glass-card rounded-xl overflow-hidden group accordion-item">
-        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-white/5 transition-colors">
+        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-surface-container transition-colors">
             <div class="flex items-center gap-lg text-left">
                 <span class="text-h3 font-h3 text-primary/40">03</span>
 
@@ -601,23 +667,23 @@
             </span>
         </button>
 
-        <div class="accordion-content hidden px-lg pb-lg border-t border-white/5">
+        <div class="accordion-content hidden px-lg pb-lg border-t border-outline-variant">
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-md text-body-md text-on-surface-variant pt-md">
-                <li>• Linux & Windows Oracle installations</li>
-                <li>• Silent mode & response files</li>
-                <li>• DBCA database creation</li>
-                <li>• Environment variables & ORACLE_HOME</li>
-                <li>• Oracle Net & Listener configuration</li>
-                <li>• Parameter management</li>
-                <li>• Listener troubleshooting</li>
-                <li>• Labs: Multi-version deployments</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Linux & Windows Oracle installations</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Silent mode & response files</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> DBCA database creation</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Environment variables & ORACLE_HOME</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Oracle Net & Listener configuration</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Parameter management</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Listener troubleshooting</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Labs: Multi-version deployments</li>
             </ul>
         </div>
     </div>
 
     <!-- Module 4 -->
     <div class="glass-card rounded-xl overflow-hidden group accordion-item">
-        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-white/5 transition-colors">
+        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-surface-container transition-colors">
             <div class="flex items-center gap-lg text-left">
                 <span class="text-h3 font-h3 text-primary/40">04</span>
 
@@ -637,23 +703,23 @@
             </span>
         </button>
 
-        <div class="accordion-content hidden px-lg pb-lg border-t border-white/5">
+        <div class="accordion-content hidden px-lg pb-lg border-t border-outline-variant">
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-md text-body-md text-on-surface-variant pt-md">
-                <li>• Startup & shutdown modes</li>
-                <li>• spfile & parameter management</li>
-                <li>• Tablespace & datafile administration</li>
-                <li>• User & role management</li>
-                <li>• Security & auditing basics</li>
-                <li>• Data dictionary & dynamic views</li>
-                <li>• Indexes, partitions & object management</li>
-                <li>• Flashback technologies</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Startup & shutdown modes</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> spfile & parameter management</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Tablespace & datafile administration</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> User & role management</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Security & auditing basics</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Data dictionary & dynamic views</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Indexes, partitions & object management</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Flashback technologies</li>
             </ul>
         </div>
     </div>
 
     <!-- Module 5 -->
-    <div class="glass-card rounded-xl overflow-hidden group accordion-item border-l-2 border-primary">
-        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-white/5 transition-colors">
+    <div class="glass-card rounded-xl overflow-hidden group accordion-item border-l-4 border-primary">
+        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-surface-container transition-colors">
             <div class="flex items-center gap-lg text-left">
                 <span class="text-h3 font-h3 text-primary/40">05</span>
 
@@ -673,23 +739,23 @@
             </span>
         </button>
 
-        <div class="accordion-content hidden px-lg pb-lg border-t border-white/5">
+        <div class="accordion-content hidden px-lg pb-lg border-t border-outline-variant">
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-md text-body-md text-on-surface-variant pt-md">
-                <li>• RMAN backup & recovery</li>
-                <li>• Complete & incomplete recovery</li>
-                <li>• Flash Recovery Area management</li>
-                <li>• Data Pump migrations</li>
-                <li>• Flashback Database</li>
-                <li>• Data Guard fundamentals</li>
-                <li>• Disaster recovery strategies</li>
-                <li>• Labs: Media failure simulations</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> RMAN backup & recovery</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Complete & incomplete recovery</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Flash Recovery Area management</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Data Pump migrations</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Flashback Database</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Data Guard fundamentals</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Disaster recovery strategies</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Labs: Media failure simulations</li>
             </ul>
         </div>
     </div>
 
     <!-- Module 6 -->
-    <div class="glass-card rounded-xl overflow-hidden group accordion-item border-l-2 border-primary">
-        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-white/5 transition-colors">
+    <div class="glass-card rounded-xl overflow-hidden group accordion-item border-l-4 border-primary">
+        <button class="accordion-header w-full p-lg flex justify-between items-center hover:bg-surface-container transition-colors">
             <div class="flex items-center gap-lg text-left">
                 <span class="text-h3 font-h3 text-primary/40">06</span>
 
@@ -709,16 +775,16 @@
             </span>
         </button>
 
-        <div class="accordion-content hidden px-lg pb-lg border-t border-white/5">
+        <div class="accordion-content hidden px-lg pb-lg border-t border-outline-variant">
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-md text-body-md text-on-surface-variant pt-md">
-                <li>• AWR, ADDM & ASH analysis</li>
-                <li>• SQL tuning & execution plans</li>
-                <li>• Statistics gathering & indexing</li>
-                <li>• Memory optimization</li>
-                <li>• I/O tuning techniques</li>
-                <li>• SQL Tuning Advisor</li>
-                <li>• Real-Time SQL Monitoring</li>
-                <li>• Labs: Diagnose and optimize workloads</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> AWR, ADDM & ASH analysis</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> SQL tuning & execution plans</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Statistics gathering & indexing</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Memory optimization</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> I/O tuning techniques</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> SQL Tuning Advisor</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Real-Time SQL Monitoring</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Labs: Diagnose and optimize workloads</li>
             </ul>
         </div>
     </div>
@@ -739,27 +805,29 @@
         });
     });
 </script>
+
 <!-- Hands-on Lab Highlights -->
 <div class="py-xl">
 <h2 class="font-h2 text-h2 mb-xl border-l-4 border-secondary pl-md">Hands-on Lab Highlights</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
-<div class="bg-surface-container rounded-xl p-lg border border-white/5">
+<div class="bg-surface-container rounded-xl p-lg border border-outline-variant">
 <span class="material-symbols-outlined text-primary text-[40px] mb-md">cloud_sync</span>
 <h4 class="font-h3 text-h3 mb-sm">Cloud Deployments</h4>
 <p class="text-on-surface-variant text-body-md">Spin up Oracle 19c/21c instances in OCI and manage hybrid cloud workloads.</p>
 </div>
-<div class="bg-surface-container rounded-xl p-lg border border-white/5">
+<div class="bg-surface-container rounded-xl p-lg border border-outline-variant">
 <span class="material-symbols-outlined text-secondary text-[40px] mb-md">settings_backup_restore</span>
 <h4 class="font-h3 text-h3 mb-sm">RMAN Recovery</h4>
 <p class="text-on-surface-variant text-body-md">Simulate total media failure and perform point-in-time recoveries under pressure.</p>
 </div>
-<div class="bg-surface-container rounded-xl p-lg border border-white/5">
+<div class="bg-surface-container rounded-xl p-lg border border-outline-variant">
 <span class="material-symbols-outlined text-primary text-[40px] mb-md">query_stats</span>
 <h4 class="font-h3 text-h3 mb-sm">Tuning Drills</h4>
 <p class="text-on-surface-variant text-body-md">Optimize real-world "broken" SQL queries using diagnostic toolsets.</p>
 </div>
 </div>
 </div>
+
 <!-- Reviews Section -->
 <div>
 <h2 class="font-h2 text-h2 mb-xl">Student Success Stories</h2>
@@ -767,7 +835,7 @@
 <div class="glass-card p-lg rounded-xl">
 <div class="flex items-center gap-md mb-md">
 <div class="w-12 h-12 rounded-full overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A professional headshot of a confident man in his early 30s, wearing a modern charcoal suit. He has a warm yet serious expression, set against a blurred corporate background with cool blue tones. The lighting is crisp and professional, highlighting a successful, tech-focused career persona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgRMvXY8kqFTbmgTt7uD-3YAUJ1SFTFqSBV2H007oQQCpBa5V_fBgXxa9FHOtQ3MENFkV2Qzes_U7sza9Q6UzecLW98Gjkcnv-uVu1q3An6W1PP8_GGsQSQ7Db5iknAGI4Otiq_1xGBGH3EENtShHBEl0Gcg4LsfSoTGcGM7Bz-AS1_W4JGJyViqcc_-ApYIoL8cvwWu_cW3DNp4FFhyz21tbuGlyrNd6olG4xNgS3E6Q__Par4R3igPplEBd5jTTh-48NUFmgp7g"/>
+<img class="w-full h-full object-cover" alt="David Chen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgRMvXY8kqFTbmgTt7uD-3YAUJ1SFTFqSBV2H007oQQCpBa5V_fBgXxa9FHOtQ3MENFkV2Qzes_U7sza9Q6UzecLW98Gjkcnv-uVu1q3An6W1PP8_GGsQSQ7Db5iknAGI4Otiq_1xGBGH3EENtShHBEl0Gcg4LsfSoTGcGM7Bz-AS1_W4JGJyViqcc_-ApYIoL8cvwWu_cW3DNp4FFhyz21tbuGlyrNd6olG4xNgS3E6Q__Par4R3igPplEBd5jTTh-48NUFmgp7g"/>
 </div>
 <div>
 <h5 class="font-bold">David Chen</h5>
@@ -786,7 +854,7 @@
 <div class="glass-card p-lg rounded-xl">
 <div class="flex items-center gap-md mb-md">
 <div class="w-12 h-12 rounded-full overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A portrait of a young female professional with a bright, intelligent smile. She is wearing stylish glasses and a deep navy blazer. The background is a minimalist, out-of-focus modern office space with subtle green accents from indoor plants. The mood is optimistic and tech-savvy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA65QCxyYyyYmeEfmPuVEFc4LaqZrbvLy0Q--EZeb6utvV-FQrvHMu3evySp1drQtNEdCnJd56fQt_fWlmjZTjte4BTEy_Bh0wpECiTMD5H1Jd-kQhDfy7_M4I-bzHcgfQTn0GBgLAnbkX6OKEyOhIBlXQ18YY5ediaT_e6e5d3OphmiIv5ssr6o4lta3y0-hlrLo5DZd4ibP_7mJL7ZWzALHP_9HlwMrZ_SHhxTY-3Mn06OiDKyxtYn4zI3HBWrDcGPkMVCstjLRc"/>
+<img class="w-full h-full object-cover" alt="Sarah Jenkins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA65QCxyYyyYmeEfmPuVEFc4LaqZrbvLy0Q--EZeb6utvV-FQrvHMu3evySp1drQtNEdCnJd56fQt_fWlmjZTjte4BTEy_Bh0wpECiTMD5H1Jd-kQhDfy7_M4I-bzHcgfQTn0GBgLAnbkX6OKEyOhIBlXQ18YY5ediaT_e6e5d3OphmiIv5ssr6o4lta3y0-hlrLo5DZd4ibP_7mJL7ZWzALHP_9HlwMrZ_SHhxTY-3Mn06OiDKyxtYn4zI3HBWrDcGPkMVCstjLRc"/>
 </div>
 <div>
 <h5 class="font-bold">Sarah Jenkins</h5>
@@ -807,18 +875,19 @@
 </div>
 </section>
 </main>
+
 <!-- Footer -->
-<footer class="bg-surface-container-lowest w-full py-xxl mt-xxl border-t border-white/5">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-lg max-w-[1280px] mx-auto px-gutter">
+<footer class="bg-surface-container-lowest w-full py-section-padding mt-section-padding border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg max-w-container-max mx-auto px-margin-desktop">
 <div class="col-span-1 md:col-span-1">
 <div class="font-h2 text-h2 text-primary mb-md">BiproSyncLogic</div>
 <p class="text-on-surface-variant text-body-md">Empowering through precision technology and elite technical education.</p>
 </div>
 <div class="space-y-sm">
 <h6 class="font-bold text-on-surface mb-md">Curriculum</h6>
-<a class="block text-on-surface-variant hover:text-primary transition-colors" href="#">Oracle Database</a>
-<a class="block text-on-surface-variant hover:text-primary transition-colors" href="#">Cloud Fundamentals</a>
-<a class="block text-on-surface-variant hover:text-primary transition-colors" href="#">Network Security</a>
+<a class="block text-on-surface-variant hover:text-primary transition-colors" href="/programs/oracle-enterprise-dba.html">Oracle Database</a>
+<a class="block text-on-surface-variant hover:text-primary transition-colors" href="/programs/cloud-fundamentals.html">Cloud Fundamentals</a>
+<a class="block text-on-surface-variant hover:text-primary transition-colors" href="/programs/cybersecurity-essentials.html">Cybersecurity</a>
 </div>
 <div class="space-y-sm">
 <h6 class="font-bold text-on-surface mb-md">Institutional</h6>
@@ -830,13 +899,13 @@
 <h6 class="font-bold text-on-surface mb-md">Newsletter</h6>
 <p class="text-on-surface-variant text-body-md mb-md">Get the latest course updates and technical deep-dives.</p>
 <div class="flex">
-<input class="bg-background border border-white/10 rounded-l-lg px-md w-full focus:ring-1 focus:ring-primary outline-none" placeholder="email@enterprise.com" type="email"/>
+<input class="bg-background border border-outline-variant rounded-l-lg px-md w-full focus:ring-1 focus:ring-primary outline-none" placeholder="email@enterprise.com" type="email"/>
 <button class="bg-primary text-on-primary px-md py-sm rounded-r-lg font-bold">Join</button>
 </div>
 </div>
 </div>
-<div class="max-w-[1280px] mx-auto px-gutter mt-xl pt-lg border-t border-white/5 text-center text-on-surface-variant text-body-md">
-            © 2024 BiproSyncLogic. Empowering through precision technology.
+<div class="max-w-container-max mx-auto px-margin-desktop mt-xl pt-lg border-t border-outline-variant text-center text-on-surface-variant text-body-md">
+            &copy; 2024 BiproSyncLogic. Empowering through precision technology.
         </div>
 </footer>
 </body></html>
