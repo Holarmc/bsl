@@ -5,6 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Managed Services &amp; Migration | BSL - Engineering Reliable IT</title>
 <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454288/thumbnail_nsntwj.png">
+<!-- <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454288/thumbnail_nsntwj.png"> -->
 <meta content="Enterprise-grade IT Managed Services and Application &amp; Infrastructure Migration by BiproSyncLogic. 24/7 monitoring, zero data loss migration, and infrastructure modernization." name="description"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
@@ -114,27 +115,177 @@
         .hero-gradient {
             background: linear-gradient(135deg, #f8f9fa 0%, #e7e8e9 100%);
         }
+        /* =========================
+        DARK MODE SYSTEM
+        ========================= */
+
+        html.dark,
+        html.dark body {
+            background-color: #0f131d;
+            color: #e5e7eb;
+        }
+
+        /* Main backgrounds */
+        html.dark .bg-background,
+        html.dark .bg-surface {
+            background-color: #0f131d !important;
+        }
+
+        html.dark .bg-surface-container-lowest {
+            background-color: #111827 !important;
+        }
+
+        html.dark .bg-surface-container-low {
+            background-color: #161c27 !important;
+        }
+
+        html.dark .bg-surface-container {
+            background-color: #1c2431 !important;
+        }
+
+        html.dark .bg-surface-container-high {
+            background-color: #273142 !important;
+        }
+
+        html.dark .bg-surface-container-highest {
+            background-color: #313d4f !important;
+        }
+
+        /* White cards */
+        html.dark .bg-white {
+            background-color: #1c2431 !important;
+        }
+
+        /* Text colors */
+        html.dark .text-on-background,
+        html.dark .text-on-surface {
+            color: #f3f4f6 !important;
+        }
+
+        html.dark .text-on-surface-variant {
+            color: #b6c0cf !important;
+        }
+
+        html.dark .text-primary {
+            color: #82cfff !important;
+        }
+
+        html.dark .text-secondary {
+            color: #92da57 !important;
+        }
+
+        /* Hero Gradient */
+        html.dark .hero-gradient {
+            background: linear-gradient(
+                135deg,
+                #0f131d 0%,
+                #1a2230 100%
+            ) !important;
+        }
+
+        /* Header */
+        html.dark header {
+            background-color: #0f131d !important;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        /* Mobile menu */
+        html.dark #mobile-menu {
+            background-color: #111827 !important;
+        }
+
+        /* Borders */
+        html.dark .border-outline-variant,
+        html.dark .border-outline,
+        html.dark .border-surface-variant {
+            border-color: #374151 !important;
+        }
+
+        /* Buttons */
+        html.dark .bg-primary {
+            background-color: #0095d9 !important;
+        }
+
+        html.dark .bg-primary-container {
+            background-color: #00384f !important;
+        }
+
+        html.dark .text-on-primary {
+            color: white !important;
+        }
+
+        /* Hover states */
+        html.dark .hover\:bg-surface-container:hover {
+            background-color: #273142 !important;
+        }
+
+        html.dark .hover\:bg-primary\/10:hover {
+            background-color: rgba(130, 207, 255, 0.1) !important;
+        }
+
+        /* Shadows */
+        html.dark .shadow-sm,
+        html.dark .shadow-md,
+        html.dark .shadow-lg,
+        html.dark .shadow-xl,
+        html.dark .shadow-2xl {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.45) !important;
+        }
+
+        /* Dark business impact section */
+        html.dark .bg-on-background {
+            background-color: #06090f !important;
+        }
+
+        /* Footer */
+        html.dark footer {
+            background-color: #0b0f17 !important;
+        }
+
+        /* Secondary container */
+        html.dark .bg-secondary-container {
+            background-color: #22351a !important;
+        }
+
+        html.dark .text-on-secondary-container {
+            color: #d6f5c5 !important;
+        }
+
+        html.dark .text-on-secondary-fixed,
+        html.dark .text-secondary-fixed {
+            color: #b9ff84 !important;
+        }
+
+        /* Outline text */
+        html.dark .text-outline-variant {
+            color: #9ca3af !important;
+        }
+
+        /* CTA white buttons */
+        html.dark .bg-white.text-primary {
+            background-color: #f3f4f6 !important;
+            color: #0f131d !important;
+        }
+
+        /* General transitions */
+        body,
+        section,
+        div,
+        header,
+        footer,
+        aside,
+        button,
+        a {
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased">
 <!-- TopNavBar -->
-<!-- <header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
-<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
-<div class="flex items-center gap-2">
-<span class="font-h3 text-h3 font-extrabold text-primary">BSL</span>
-</div>
-<div class="hidden md:flex items-center gap-stack-lg">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About Us</a>
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Services</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Training</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
-</div>
-<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all">
-                Get Started
-            </button>
-</nav>
-</header> -->
+
 <header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
 
     <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
@@ -145,8 +296,7 @@
                 <img 
                     alt="BiproSyncLogic Logo"
                     class="h-10 w-auto"
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"
-                />
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/>
             </a>
         </div>
 
@@ -171,8 +321,31 @@
 
         <!-- CTA + Mobile Menu Button -->
         <div class="flex items-center gap-4">
+            <!-- CTA + Theme Toggle + Mobile Menu Button -->
+<div class="flex items-center gap-4">
 
-            <button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
+    <!-- Theme Toggle -->
+    <button 
+        id="theme-toggle"
+        class="p-2 rounded-lg hover:bg-surface-container transition-colors"
+        aria-label="Toggle dark mode"
+    >
+        <span 
+            id="theme-icon-light"
+            class="material-symbols-outlined text-[24px]"
+        >
+            dark_mode
+        </span>
+
+        <span 
+            id="theme-icon-dark"
+            class="material-symbols-outlined text-[24px] hidden"
+        >
+            light_mode
+        </span>
+    </button>
+
+    <button onclick="window.location.href='/training.html';" class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
                 Get Started
             </button>
 
@@ -208,8 +381,7 @@
             <img 
                 alt="BSL Logo"
                 class="h-10 w-auto"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"
-            />
+                src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/>
 
             <button 
                 id="close-menu"
@@ -268,13 +440,23 @@
                     arrow_forward_ios
                 </span> -->
             </a>
+              <!-- Mobile Theme Toggle -->
+            <button 
+                id="mobile-theme-toggle"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>Toggle Theme</span>
+                <span class="material-symbols-outlined text-[20px]">
+                    contrast
+                </span>
+            </button>
 
         </div>
 
         <!-- Bottom CTA -->
         <div class="mt-auto p-6 border-t border-outline-variant">
 
-            <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+            <button onclick="window.location.href='/training.html';" class="w-full bg-primary text-on-primary py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
                 Get Started
             </button>
 
@@ -309,6 +491,40 @@
     mobileOverlay.addEventListener("click", closeMobileMenu);
 
 </script>
+
+<!-- Theme Toggle Script -->
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
+    const themeIconLight = document.getElementById("theme-icon-light");
+    const themeIconDark = document.getElementById("theme-icon-dark");
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        html.classList.add("dark");
+        themeIconLight.classList.add("hidden");
+        themeIconDark.classList.remove("hidden");
+    }
+
+    function toggleTheme() {
+        html.classList.toggle("dark");
+        const isDark = html.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        
+        if (isDark) {
+            themeIconLight.classList.add("hidden");
+            themeIconDark.classList.remove("hidden");
+        } else {
+            themeIconLight.classList.remove("hidden");
+            themeIconDark.classList.add("hidden");
+        }
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+    mobileThemeToggle.addEventListener("click", toggleTheme);
+</script>
 <main>
 <!-- Hero Section -->
 <section class="hero-gradient py-section-padding border-b border-outline-variant/20">
@@ -320,16 +536,16 @@
                         Transition critical applications and infrastructure with zero data loss. We provide 24/7 proactive monitoring designed for enterprise-grade reliability and mission-critical uptime.
                     </p>
 <div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg hover:translate-y-[-2px] transition-transform">
+<button onclick="window.location.href='/services.html';"  class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg hover:translate-y-[-2px] transition-transform">
                             Free Readiness Assessment
                         </button>
-<button class="border-2 border-on-background text-on-background px-8 py-4 rounded-lg font-bold hover:bg-surface-container transition-colors">
+<button onclick="window.location.href='#services'"  class="border-2 border-on-background text-on-background px-8 py-4 rounded-lg font-bold hover:bg-surface-container transition-colors">
                             Service Catalog
                         </button>
 </div>
 </div>
 <div class="relative">
-<img alt="Modern server room" class="rounded-xl shadow-2xl w-full aspect-square object-cover" data-alt="A highly detailed, professional photograph of a modern enterprise data center with rows of sleek black server racks. The cooling lights emit a soft blue glow reflecting on the polished concrete floor, creating a sophisticated and technologically advanced atmosphere. The lighting is crisp and high-end, emphasizing precision and clean architectural lines in a corporate IT environment." src="https://lh3.googleusercontent.com/aida/ADBb0ugPUOZYfGlfAKz9JbiCntCQgRPCZH1sBkIddbVZFob-Yh-SJ3Nhma5XyPHov1HqPQ1yhPUdnA46DFhH0sorPLS65OR2QLzx4KqU8C4YWqm-hU2qVLx7GtMHDUoKprMdQdI__-YjtNdYCY9x06aCjDEC2AUki2IeQ1ANR9elDtfihRFdw6DwurnXYu9nVDZMZvYoiyQjINFjWQ1MuoSA0y-Yord-c5RoicSBSoalyKqOttrAiTm0S5J-LMfGUkzJmLrBLghg3oqp"/>
+<img alt="Modern server room" class="rounded-xl shadow-2xl w-full aspect-square object-cover" data-alt="A highly detailed, professional photograph of a modern enterprise data center with rows of sleek black server racks. The cooling lights emit a soft blue glow reflecting on the polished concrete floor, creating a sophisticated and technologically advanced atmosphere. The lighting is crisp and high-end, emphasizing precision and clean architectural lines in a corporate IT environment." src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454287/blsfull-whitebg_vi818f.jpg"/>
 <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl border border-outline-variant/30 hidden lg:block">
 <div class="flex items-center gap-4 mb-2">
 <span class="material-symbols-outlined text-secondary text-4xl" data-icon="check_circle" data-weight="fill">check_circle</span>
@@ -343,7 +559,7 @@
 </div>
 </section>
 <!-- Managed Services Bento Section -->
-<section class="py-section-padding bg-surface">
+<section class="py-section-padding bg-surface" id="services">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="text-center mb-16">
 <h2 class="font-h2 text-h2 text-on-background mb-4">IT Managed Services</h2>
@@ -417,14 +633,14 @@
 <div class="grid grid-cols-2 gap-4">
 <div class="bg-white p-4 rounded-2xl shadow-sm space-y-4">
 <div class="bg-surface-container p-2 rounded-lg w-fit">
-<img alt="Migration logo 1" class="h-10 object-contain" data-alt="A clean, minimalist logo of a leading cloud provider like AWS or Azure, rendered in professional vector style against a soft light-gray background. The image is designed to represent enterprise technology partnerships with a focus on cloud infrastructure and reliability." src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"/>
+<img alt="Migration logo 1" class="h-10 object-contain" data-alt="A clean, minimalist logo of a leading cloud provider like AWS or Azure, rendered in professional vector style against a soft light-gray background. The image is designed to represent enterprise technology partnerships with a focus on cloud infrastructure and reliability." src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/thumbnail_slnut3.png"/>
 </div>
 <h4 class="font-bold text-primary">Cloud Hybrid</h4>
 <p class="text-label-sm text-on-surface-variant">Seamless cross-cloud transitions between AWS, Azure, and Google Cloud.</p>
 </div>
 <div class="bg-white p-4 rounded-2xl shadow-sm space-y-4 mt-8">
 <div class="bg-surface-container p-2 rounded-lg w-fit">
-<img alt="Migration logo 2" class="h-10 object-contain" data-alt="A professional icon or logo representing virtualization software like VMware or Oracle, displayed with high contrast and sharp edges. The visual is placed on a clean white card, embodying the technical mastery required for complex server migrations in a corporate IT setting." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+<img alt="Migration logo 2" class="h-10 object-contain" data-alt="A professional icon or logo representing virtualization software like VMware or Oracle, displayed with high contrast and sharp edges. The visual is placed on a clean white card, embodying the technical mastery required for complex server migrations in a corporate IT setting." src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/thumbnail_slnut3.png"/>
 </div>
 <h4 class="font-bold text-secondary">Virtualization</h4>
 <p class="text-label-sm text-on-surface-variant">Zero-disruption migration from legacy IBM and Oracle infrastructure.</p>
@@ -541,7 +757,7 @@
                                     Focus on Uptime &amp; Predictable ROI
                                 </li>
 </ul>
-<button class="bg-white text-primary px-8 py-3 rounded-lg font-bold w-full md:w-fit hover:bg-opacity-90 transition-all">
+<button onclick="window.location.href='/contacts.html';" class="bg-white text-primary px-8 py-3 rounded-lg font-bold w-full md:w-fit hover:bg-opacity-90 transition-all">
                                 Request Discovery Call
                             </button>
 </div>
@@ -554,12 +770,12 @@
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="flex flex-col md:flex-row gap-8 items-center bg-secondary-container p-stack-lg rounded-3xl">
 <div class="md:w-1/3">
-<img alt="Training session" class="rounded-2xl w-full aspect-video md:aspect-square object-cover" data-alt="A professional instructor-led corporate IT training session in a brightly lit, modern classroom. The participants are engaged with high-end workstations, while the instructor points to a digital presentation showcasing complex network architectures. The lighting is natural and bright, conveying an atmosphere of learning, professional development, and technological empowerment." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+<img alt="Training session" class="rounded-2xl w-full aspect-video md:aspect-square object-cover" data-alt="A professional instructor-led corporate IT training session in a brightly lit, modern classroom. The participants are engaged with high-end workstations, while the instructor points to a digital presentation showcasing complex network architectures. The lighting is natural and bright, conveying an atmosphere of learning, professional development, and technological empowerment." src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454253/logo_Large_ifnbyu.png"/>
 </div>
 <div class="md:w-2/3 md:pl-8">
 <h3 class="font-h3 text-h3 text-on-secondary-fixed mb-4">Empower Your Technical Team</h3>
 <p class="text-on-secondary-container mb-6 font-body-md">Build high-performing teams with our practical, hands-on training programs in Cloud, Cybersecurity, and Infrastructure Management. Certifiable courses tailored for C-Suite and technical staff.</p>
-<a class="inline-flex items-center gap-2 text-on-secondary-fixed font-bold border-b-2 border-on-secondary-fixed pb-1 hover:opacity-70 transition-all" href="#">
+<a class="inline-flex items-center gap-2 text-on-secondary-fixed font-bold border-b-2 border-on-secondary-fixed pb-1 hover:opacity-70 transition-all" href="/training.html">
                             View Course Catalog
                             <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </a>
@@ -573,8 +789,8 @@
 <h2 class="font-h1 text-h1 mb-6 text-on-background">Ready to transform your IT?</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">Partner with us to build a resilient, secure, and high-performing technology environment. Let's start with a free readiness assessment.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-transform">Schedule Consultation</button>
-<button class="bg-white border-2 border-outline text-on-surface px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container transition-colors">Contact Us Today</button>
+<button onclick="window.location.href='/contacts.html';" class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-transform">Schedule Consultation</button>
+<button onclick="window.location.href='/contacts.html';"class="bg-white border-2 border-outline text-on-surface px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container transition-colors">Contact Us Today</button>
 </div>
 </div>
 </section>
@@ -583,7 +799,14 @@
 <footer class="bg-surface-container-highest dark:bg-surface-container-lowest w-full">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
 <div class="md:col-span-1">
-<span class="font-h3 text-h3 font-extrabold text-primary mb-6 block">BSL</span>
+<span class="font-h3 text-h3 font-extrabold text-primary mb-6 block">
+                <a href="/">
+                <img 
+                    alt="BiproSyncLogic Logo"
+                    class="h-10 w-auto"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454284/bjgf_yzpiye.png"/>
+            </a>
+</span>
 <p class="text-on-surface-variant text-body-md">Engineering Reliable IT. Powering Business Growth. Your partner for resilient, future-ready technology services.</p>
 </div>
 <div>
@@ -611,7 +834,7 @@
 </div>
 </div>
 <div class="border-t border-outline-variant/30 py-8 text-center">
-<p class="text-on-surface-variant text-body-md">© 2024 BiproSyncLogic. All rights reserved.</p>
+<p class="text-on-surface-variant text-body-md">© 2026 BiproSyncLogic. All rights reserved.</p>
 </div>
 </footer>
 </body></html>
