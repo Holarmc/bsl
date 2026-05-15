@@ -114,42 +114,199 @@
         backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.3);
       }
+
+        /* =========================
+        DARK MODE SYSTEM
+        ========================= */
+
+        html.dark,
+        html.dark body {
+            background-color: #0f131d;
+            color: #e5e7eb;
+        }
+
+        /* Main backgrounds */
+        html.dark .bg-background,
+        html.dark .bg-surface {
+            background-color: #0f131d !important;
+        }
+
+        html.dark .bg-surface-container-lowest {
+            background-color: #111827 !important;
+        }
+
+        html.dark .bg-surface-container-low {
+            background-color: #161c27 !important;
+        }
+
+        html.dark .bg-surface-container {
+            background-color: #1c2431 !important;
+        }
+
+        html.dark .bg-surface-container-high {
+            background-color: #273142 !important;
+        }
+
+        html.dark .bg-surface-container-highest {
+            background-color: #313d4f !important;
+        }
+
+        /* White cards */
+        html.dark .bg-white {
+            background-color: #1c2431 !important;
+        }
+
+        /* Text colors */
+        html.dark .text-on-background,
+        html.dark .text-on-surface {
+            color: #f3f4f6 !important;
+        }
+
+        html.dark .text-on-surface-variant {
+            color: #b6c0cf !important;
+        }
+
+        html.dark .text-primary {
+            color: #82cfff !important;
+        }
+
+        html.dark .text-secondary {
+            color: #92da57 !important;
+        }
+
+        /* Hero Gradient */
+        html.dark .hero-gradient {
+            background: linear-gradient(
+                135deg,
+                #0f131d 0%,
+                #1a2230 100%
+            ) !important;
+        }
+
+        /* Header */
+        html.dark header {
+            background-color: #0f131d !important;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        /* Mobile menu */
+        html.dark #mobile-menu {
+            background-color: #111827 !important;
+        }
+
+        /* Borders */
+        html.dark .border-outline-variant,
+        html.dark .border-outline,
+        html.dark .border-surface-variant {
+            border-color: #374151 !important;
+        }
+
+        /* Buttons */
+        html.dark .bg-primary {
+            background-color: #0095d9 !important;
+        }
+
+        html.dark .bg-primary-container {
+            background-color: #00384f !important;
+        }
+
+        html.dark .text-on-primary {
+            color: white !important;
+        }
+
+        /* Hover states */
+        html.dark .hover\:bg-surface-container:hover {
+            background-color: #273142 !important;
+        }
+
+        html.dark .hover\:bg-primary\/10:hover {
+            background-color: rgba(130, 207, 255, 0.1) !important;
+        }
+
+        /* Shadows */
+        html.dark .shadow-sm,
+        html.dark .shadow-md,
+        html.dark .shadow-lg,
+        html.dark .shadow-xl,
+        html.dark .shadow-2xl {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.45) !important;
+        }
+
+        /* Dark business impact section */
+        html.dark .bg-on-background {
+            background-color: #06090f !important;
+        }
+
+        /* Footer */
+        html.dark footer {
+            background-color: #0b0f17 !important;
+        }
+
+        /* Secondary container */
+        html.dark .bg-secondary-container {
+            background-color: #22351a !important;
+        }
+
+        html.dark .text-on-secondary-container {
+            color: #d6f5c5 !important;
+        }
+
+        html.dark .text-on-secondary-fixed,
+        html.dark .text-secondary-fixed {
+            color: #b9ff84 !important;
+        }
+
+        /* Outline text */
+        html.dark .text-outline-variant {
+            color: #9ca3af !important;
+        }
+
+        /* CTA white buttons */
+        html.dark .bg-white.text-primary {
+            background-color: #f3f4f6 !important;
+            color: #0f131d !important;
+        }
+
+        /* General transitions */
+        body,
+        section,
+        div,
+        header,
+        footer,
+        aside,
+        button,
+        a {
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar Component -->
-<!-- <nav class="w-full top-0 sticky z-50 bg-surface dark:bg-background shadow-sm dark:bg-surface-container-low">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
-<div class="font-h3 text-h3 font-extrabold text-primary dark:text-primary-container">BSL</div>
 
-<div class="hidden md:flex gap-stack-lg items-center">
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">Home</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">About Us</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">Services</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-container transition-colors duration-200" href="#">Training</a>
-<a class="font-body-md text-body-md text-primary dark:text-primary-container font-bold border-b-2 border-primary dark:border-primary-container pb-1" href="#">Contact</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all">
-                Get Started
-            </button>
-</div>
-</nav> -->
 <header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
 
-    <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+    <nav class="relative flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
 
         <!-- Logo -->
-        <div class="flex items-center gap-md">
+        <div class="static flex items-center gap-md ">
             <a href="/">
                 <img 
+                    id="logo-light"
                     alt="BiproSyncLogic Logo"
-                    class="h-10 w-auto"
-                    src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"
-                />
+                    class="absolute -top-10 left-5 h-40 w-auto dark:hidden object-cover"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778795886/fulname-logo-removebg-preview_yobrbj.png"/>
+
+                 <img 
+                    id="logo-dark"
+                    alt="BiproSyncLogic Logo"
+                    class="absolute -top-10 left-5 h-40 w-auto hidden dark:block"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778801611/fullname-logo-white-removebg-preview_brbqg4.png"/>
             </a>
         </div>
 
-        <!-- Desktop Nav -->
+               <!-- Desktop Nav -->
         <div class="hidden md:flex items-center gap-stack-lg">
             <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/about-us.html">
                 About Us
@@ -168,13 +325,27 @@
             </a>
         </div>
 
-        <!-- CTA + Mobile Menu Button -->
+        <!-- CTA + Theme Toggle + Mobile Menu Button -->
         <div class="flex items-center gap-4">
 
-            <button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
-                Get Started
+            <!-- Theme Toggle Button -->
+            <button 
+                id="theme-toggle"
+                class="p-2 rounded-lg hover:bg-surface-container transition-colors"
+                aria-label="Toggle dark mode"
+            >
+                <span id="theme-icon-light" class="material-symbols-outlined text-[24px]">
+                    dark_mode
+                </span>
+                <span id="theme-icon-dark" class="material-symbols-outlined text-[24px] hidden">
+                    light_mode
+                </span>
             </button>
 
+            <button onclick="window.location.href='/training.html';" class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
+                Get Started
+            </button>
+ 
             <!-- Hamburger -->
             <button 
                 id="menu-btn"
@@ -204,11 +375,23 @@
         <!-- Sidebar Header -->
         <div class="flex justify-between items-center p-6 border-b border-outline-variant">
 
-            <img 
+            <!-- <img 
                 alt="BSL Logo"
                 class="h-10 w-auto"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"
-            />
+                src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/> -->
+            <a href="/">
+                <img 
+                    id="logo-light"
+                    alt="BiproSyncLogic Logo"
+                    class="absolute -top-10 left-5 h-40 w-auto dark:hidden object-cover"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778795886/fulname-logo-removebg-preview_yobrbj.png"/>
+
+                 <img 
+                    id="logo-dark"
+                    alt="BiproSyncLogic Logo"
+                    class="absolute -top-10 left-5 h-40 w-auto hidden dark:block"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778801611/fullname-logo-white-removebg-preview_brbqg4.png"/>
+            </a>
 
             <button 
                 id="close-menu"
@@ -267,13 +450,23 @@
                     arrow_forward_ios
                 </span> -->
             </a>
+              <!-- Mobile Theme Toggle -->
+            <button 
+                id="mobile-theme-toggle"
+                class="flex items-center justify-between px-4 py-4 rounded-xl hover:bg-primary/10 transition-colors text-on-surface"
+            >
+                <span>Toggle Theme</span>
+                <span class="material-symbols-outlined text-[20px]">
+                    contrast
+                </span>
+            </button>
 
         </div>
 
         <!-- Bottom CTA -->
         <div class="mt-auto p-6 border-t border-outline-variant">
 
-            <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+            <button onclick="window.location.href='/training.html';" class="w-full bg-primary text-on-primary py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
                 Get Started
             </button>
 
@@ -283,31 +476,7 @@
 
 </header>
 
-<!-- Mobile Menu Script -->
-<script>
 
-    const menuBtn = document.getElementById("menu-btn");
-    const closeMenu = document.getElementById("close-menu");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const mobileOverlay = document.getElementById("mobile-overlay");
-
-    function openMenu() {
-        mobileMenu.classList.remove("translate-x-full");
-        mobileOverlay.classList.remove("opacity-0", "invisible");
-    }
-
-    function closeMobileMenu() {
-        mobileMenu.classList.add("translate-x-full");
-        mobileOverlay.classList.add("opacity-0", "invisible");
-    }
-
-    menuBtn.addEventListener("click", openMenu);
-
-    closeMenu.addEventListener("click", closeMobileMenu);
-
-    mobileOverlay.addEventListener("click", closeMobileMenu);
-
-</script>
 <main>
 <!-- Hero Section -->
 <section class="relative bg-on-primary-fixed overflow-hidden pt-section-padding pb-stack-lg">
@@ -320,7 +489,7 @@
                     </p>
 </div>
 <div class="hidden md:block relative h-[400px]">
-<img alt="Enterprise IT Infrastructure Illustration" class="w-full h-full object-cover rounded-xl shadow-2xl" data-alt="A high-definition, corporate-style photograph of a modern data center with glowing blue server racks and neat cabling. The atmosphere is professional and high-tech, reflecting technical mastery and structural integrity. Soft ambient lighting illuminates the corridor, creating a sense of precision and reliability. The aesthetic is clean, minimalist, and enterprise-focused with a cool-toned color palette." src="https://lh3.googleusercontent.com/aida/ADBb0uhqmhlOM_5oT8gqroMvW3CBFyY0WJ0cJJMxpngpEUPTu-aRQxxits3dcZBMnn_pba9pEmg9283LLdb8cZWEqaUQqXce_qyDonQV1T2RL6RYAu1L9nfUdLJRrjHPT0n9kzWfR2atW0_K3GSdNBIi3e-kpML1MFDEG0tWfoUWZImuHMDm_FTlNz9zNHLXeUL-otTfkEoKm60qmJHkIFw8GtV4AU5EXUjTv7pkrkkV7hezOQ5yEI_SjzmPn238x-jJqYUW-aRCuXxGGw"/>
+<img alt="Enterprise IT Infrastructure Illustration" class="w-full h-full object-cover rounded-xl shadow-2xl" data-alt="A high-definition, corporate-style photograph of a modern data center with glowing blue server racks and neat cabling. The atmosphere is professional and high-tech, reflecting technical mastery and structural integrity. Soft ambient lighting illuminates the corridor, creating a sense of precision and reliability. The aesthetic is clean, minimalist, and enterprise-focused with a cool-toned color palette." src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454288/logo-medium_d1sfpc.png"/>
 </div>
 </div>
 <!-- Background Decorative Elements -->
@@ -388,7 +557,7 @@
 <span class="material-symbols-outlined text-primary-fixed" data-icon="mail">mail</span>
 <div>
 <p class="font-bold">Email Support</p>
-<p class="opacity-80">info@bsl.net</p>
+<p class="opacity-80">info@biprosynclogic.com</p>
 </div>
 </div>
 </div>
@@ -396,7 +565,9 @@
 </div>
 <!-- Map Placeholder/Interaction -->
 <div class="bg-surface-container-high rounded-xl overflow-hidden relative h-[250px] shadow-sm">
-<img alt="Office Location Map" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A stylized, architectural map rendering of a coastal urban neighborhood in Lagos, Nigeria, showing clean grid layouts and high-end residential areas. The map uses a sophisticated color palette of whites, grays, and brand-blue accents for water and parks. The visual style is minimalist and clean, suggesting high-end real estate and corporate precision. Subtle shadows and layers create a professional GIS-like appearance." data-location="Chevron, Nigeria" src="https://lh3.googleusercontent.com/aida/ADBb0ugPUOZYfGlfAKz9JbiCntCQgRPCZH1sBkIddbVZFob-Yh-SJ3Nhma5XyPHov1HqPQ1yhPUdnA46DFhH0sorPLS65OR2QLzx4KqU8C4YWqm-hU2qVLx7GtMHDUoKprMdQdI__-YjtNdYCY9x06aCjDEC2AUki2IeQ1ANR9elDtfihRFdw6DwurnXYu9nVDZMZvYoiyQjINFjWQ1MuoSA0y-Yord-c5RoicSBSoalyKqOttrAiTm0S5J-LMfGUkzJmLrBLghg3oqp"/>
+<!-- <img alt="Office Location Map" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A stylized, architectural map rendering of a coastal urban neighborhood in Lagos, Nigeria, showing clean grid layouts and high-end residential areas. The map uses a sophisticated color palette of whites, grays, and brand-blue accents for water and parks. The visual style is minimalist and clean, suggesting high-end real estate and corporate precision. Subtle shadows and layers create a professional GIS-like appearance." data-location="Chevron, Nigeria" src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454288/logo-medium_d1sfpc.png"/> -->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4699126863484!2d3.520411874538532!3d6.461994923875958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf6c1031cd145%3A0x90c941d61926b733!2s11%20Coachwood%20Rd%2C%20Eti-Osa%2C%20Lekki%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1778835158564!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <div class="absolute inset-0 flex items-center justify-center bg-on-background/20">
 <div class="bg-surface p-4 rounded-lg shadow-lg flex items-center gap-2">
 <span class="material-symbols-outlined text-error" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
@@ -423,14 +594,14 @@
 <p class="font-body-md text-on-surface mb-6">Interested in joining our team? Send your resume and a brief cover letter outlining your expertise.</p>
 <a class="inline-flex items-center gap-2 font-bold text-primary hover:text-secondary transition-colors group" href="mailto:careers@biprosync.net">
 <span class="material-symbols-outlined" data-icon="forward_to_inbox">forward_to_inbox</span>
-                                careers@biprosync.net
+                                careers@biprosynclogic.com
                                 <span class="material-symbols-outlined translate-x-0 group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
 </a>
 </div>
 </div>
 <div class="md:w-1/2 relative">
 <div class="aspect-square rounded-full overflow-hidden border-8 border-surface p-4 bg-secondary-container/10">
-<img alt="Careers at BSL" class="w-full h-full object-cover rounded-full shadow-xl" data-alt="A professional, diverse group of technology experts collaborating in a bright, modern glass-walled office space. The lighting is soft and high-key, creating an optimistic and inclusive atmosphere. Team members are focused and engaged with digital tablets and laptops, reflecting a culture of innovation and excellence. The color palette emphasizes corporate whites and vibrant green accents from indoor plants." src="https://lh3.googleusercontent.com/aida/ADBb0uhSbeVZ4O50NS6K8j7eO1WDNv9eJRwOBRRdTo47aRurxb0jYZpsklysLIFy6IEINVTzon0STCKsD4nu-WM0TbpLYCmHJdQ8iHXjEefK8Er4G9JjlfDNOY6-LRbQjs3POUySfUGJTVPgUku4y-Nuxgo9kxYJhEKYOYHYHHHXgv4Qm43e-5_MnYOB0On9AM_sZTJq9FAcB3qSopqL5yCE7LDQmltyy5fZnTbCmKmpee55U_AuOMpcnBM_W0k5cga0WYL4Dy6Nm-MC"/>
+<img alt="Careers at BSL" class="w-full h-full object-cover rounded-full shadow-xl" data-alt="A professional, diverse group of technology experts collaborating in a bright, modern glass-walled office space. The lighting is soft and high-key, creating an optimistic and inclusive atmosphere. Team members are focused and engaged with digital tablets and laptops, reflecting a culture of innovation and excellence. The color palette emphasizes corporate whites and vibrant green accents from indoor plants." src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454288/logo-medium_d1sfpc.png"/>
 </div>
 <!-- Floating Achievement Chip -->
 <div class="absolute top-1/4 -left-10 glass-card p-4 rounded-xl shadow-lg flex items-center gap-3">
@@ -475,46 +646,141 @@
 </div>
 </section>
 </main>
-<!-- Footer Component -->
-<footer class="w-full bg-surface-container-highest dark:bg-surface-container-lowest">
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full border-t border-outline-variant" id="contact">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
 <div class="space-y-4">
-<div class="font-h3 text-h3 font-extrabold text-primary dark:text-primary-container">BSL</div>
-<p class="text-on-surface-variant font-body-md opacity-80">
-                    Empowering Nigerian organizations with enterprise-grade IT solutions and resilient infrastructure.
-                </p>
+<!--- <span class="font-h3 text-h3 font-extrabold text-primary">BSL</span>--->
+        <!-- Logo -->
+         <div class="relative flex flex-col items-start">
+            <a href="/" class="block">
+
+                <!-- Light Logo -->
+                <img 
+                    id="logo-light"
+                    alt="BiproSyncLogic Logo"
+                    class="h-28 w-auto object-contain dark:hidden 
+                           md:absolute md:top-20 md:-left-5 md:h-40"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778795886/fulname-logo-removebg-preview_yobrbj.png"/>
+
+                <!-- Dark Logo -->
+                <img 
+                    id="logo-dark"
+                    alt="BiproSyncLogic Logo"
+                    class="hidden h-28 w-auto object-contain dark:block 
+                           md:absolute md:top-20 md:-left-5 md:h-40"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778801611/fullname-logo-white-removebg-preview_brbqg4.png"/>
+
+            </a>
+        </div>
+<p class="text-body-md text-on-surface-variant">Engineering Reliable IT. Powering Business Growth. Africa's leading technology partner.</p>
 </div>
-<div class="space-y-4">
-<h4 class="font-bold text-primary">Explore</h4>
-<ul class="space-y-2">
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Services</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">IT Training</a></li>
-<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Infrastructure Migration</a></li>
+<div>
+<h4 class="font-bold text-on-background mb-6">Services</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Managed Services</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">IT Support</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Infrastructure</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Migration</a></li>
 </ul>
 </div>
-<div class="space-y-4">
-<h4 class="font-bold text-primary">Legal</h4>
-<ul class="space-y-2">
+<div>
+<h4 class="font-bold text-on-background mb-6">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">About Us</a></li>
 <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
 <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
 <li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a></li>
 </ul>
 </div>
-<div class="space-y-4">
-<h4 class="font-bold text-primary">Office</h4>
-<p class="text-on-surface-variant text-sm">
-                    11 Coachwood Street, Northern Foreshore Estate, Chevron<br/>
-                    Lagos, Nigeria
-                </p>
-<div class="flex gap-4">
-<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
-<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined" data-icon="hub">hub</span></a>
+<div>
+<h4 class="font-bold text-on-background mb-6">Contact</h4>
+<address class="not-italic text-on-surface-variant space-y-3">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                        11 Coachwood Street, Northern Foreshore Estate, Chevron
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">phone</span>
+                        +234 905 878 8143
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        info@biprosynclogic.com
+                    </p>
+</address>
 </div>
 </div>
+<div class="border-t border-outline-variant py-8">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm">© 2026 BiproSyncLogic. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">group</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">terminal</span>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-outline-variant/30 flex justify-between items-center text-xs text-outline">
-<p>© 2024 BiproSyncLogic. All rights reserved.</p>
-<p>Stabilize. Optimize. Transform.</p>
+</div>
 </div>
 </footer>
+
+
+<!-- Mobile Menu Script -->
+<script>
+
+    const menuBtn = document.getElementById("menu-btn");
+    const closeMenu = document.getElementById("close-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileOverlay = document.getElementById("mobile-overlay");
+
+    function openMenu() {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileOverlay.classList.remove("opacity-0", "invisible");
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add("translate-x-full");
+        mobileOverlay.classList.add("opacity-0", "invisible");
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+
+    closeMenu.addEventListener("click", closeMobileMenu);
+
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+
+</script>
+
+<!-- Theme Toggle Script -->
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
+    const themeIconLight = document.getElementById("theme-icon-light");
+    const themeIconDark = document.getElementById("theme-icon-dark");
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        html.classList.add("dark");
+        themeIconLight.classList.add("hidden");
+        themeIconDark.classList.remove("hidden");
+    }
+
+    function toggleTheme() {
+        html.classList.toggle("dark");
+        const isDark = html.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        
+        if (isDark) {
+            themeIconLight.classList.add("hidden");
+            themeIconDark.classList.remove("hidden");
+        } else {
+            themeIconLight.classList.remove("hidden");
+            themeIconDark.classList.add("hidden");
+        }
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+    mobileThemeToggle.addEventListener("click", toggleTheme);
+</script>
 </body></html>

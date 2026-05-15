@@ -259,19 +259,26 @@ html.dark .bg-surface-container-low.-skew-x-12 {
 </header> -->
 <header class="w-full top-0 sticky z-50 bg-surface shadow-sm">
 
-    <nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
+       <nav class="relative flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4">
 
         <!-- Logo -->
-        <div class="flex items-center gap-md">
+        <div class="static flex items-center gap-md ">
             <a href="/">
                 <img 
+                    id="logo-light"
                     alt="BiproSyncLogic Logo"
-                    class="h-10 w-auto"
-                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/>
+                    class="absolute -top-10 left-5 h-40 w-auto dark:hidden object-cover"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778795886/fulname-logo-removebg-preview_yobrbj.png"/>
+
+                 <img 
+                    id="logo-dark"
+                    alt="BiproSyncLogic Logo"
+                    class="absolute -top-10 left-5 h-40 w-auto hidden dark:block"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778801611/fullname-logo-white-removebg-preview_brbqg4.png"/>
             </a>
         </div>
 
-        <!-- Desktop Nav -->
+               <!-- Desktop Nav -->
         <div class="hidden md:flex items-center gap-stack-lg">
             <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md" href="/about-us.html">
                 About Us
@@ -310,7 +317,7 @@ html.dark .bg-surface-container-low.-skew-x-12 {
             <button onclick="window.location.href='/training.html';" class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all shadow-sm">
                 Get Started
             </button>
-
+ 
             <!-- Hamburger -->
             <button 
                 id="menu-btn"
@@ -340,10 +347,23 @@ html.dark .bg-surface-container-low.-skew-x-12 {
         <!-- Sidebar Header -->
         <div class="flex justify-between items-center p-6 border-b border-outline-variant">
 
-            <img 
+           <!--  <img 
                 alt="BSL Logo"
                 class="h-10 w-auto"
-                src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/>
+                src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/> -->
+            <a href="/">
+                <img 
+                    id="logo-light"
+                    alt="BiproSyncLogic Logo"
+                    class="absolute -top-10 left-5 h-40 w-auto dark:hidden object-cover"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778795886/fulname-logo-removebg-preview_yobrbj.png"/>
+
+                 <img 
+                    id="logo-dark"
+                    alt="BiproSyncLogic Logo"
+                    class="absolute -top-10 left-5 h-40 w-auto hidden dark:block"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778801611/fullname-logo-white-removebg-preview_brbqg4.png"/>
+            </a>
 
             <button 
                 id="close-menu"
@@ -424,66 +444,6 @@ html.dark .bg-surface-container-low.-skew-x-12 {
     </aside>
 
 </header>
-
-<!-- Mobile Menu Script -->
-<script>
-
-    const menuBtn = document.getElementById("menu-btn");
-    const closeMenu = document.getElementById("close-menu");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const mobileOverlay = document.getElementById("mobile-overlay");
-
-    function openMenu() {
-        mobileMenu.classList.remove("translate-x-full");
-        mobileOverlay.classList.remove("opacity-0", "invisible");
-    }
-
-    function closeMobileMenu() {
-        mobileMenu.classList.add("translate-x-full");
-        mobileOverlay.classList.add("opacity-0", "invisible");
-    }
-
-    menuBtn.addEventListener("click", openMenu);
-
-    closeMenu.addEventListener("click", closeMobileMenu);
-
-    mobileOverlay.addEventListener("click", closeMobileMenu);
-
-</script>
-
-<!-- Theme Toggle Script -->
-<script>
-    const themeToggle = document.getElementById("theme-toggle");
-    const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
-    const themeIconLight = document.getElementById("theme-icon-light");
-    const themeIconDark = document.getElementById("theme-icon-dark");
-    const html = document.documentElement;
-
-    // Check for saved theme preference or default to light
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-        html.classList.add("dark");
-        themeIconLight.classList.add("hidden");
-        themeIconDark.classList.remove("hidden");
-    }
-
-    function toggleTheme() {
-        html.classList.toggle("dark");
-        const isDark = html.classList.contains("dark");
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-        
-        if (isDark) {
-            themeIconLight.classList.add("hidden");
-            themeIconDark.classList.remove("hidden");
-        } else {
-            themeIconLight.classList.remove("hidden");
-            themeIconDark.classList.add("hidden");
-        }
-    }
-
-    themeToggle.addEventListener("click", toggleTheme);
-    mobileThemeToggle.addEventListener("click", toggleTheme);
-</script>
 
 <main>
 <!-- Hero Section / Header -->
@@ -642,7 +602,7 @@ html.dark .bg-surface-container-low.-skew-x-12 {
 <div class="text-primary"><span class="material-symbols-outlined text-4xl" data-icon="mail">mail</span></div>
 <div>
 <h5 class="font-h3 text-h3 text-on-surface mb-1">Email Us</h5>
-<p class="font-body-md text-body-md text-on-surface-variant">info@bsl.net</p>
+<p class="font-body-md text-body-md text-on-surface-variant">info@biprosynclogic.com</p>
 </div>
 </div>
 <div class="flex gap-4">
@@ -657,47 +617,140 @@ html.dark .bg-surface-container-low.-skew-x-12 {
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full bg-surface-container-highest dark:bg-surface-container-lowest">
+<footer class="bg-surface-container-highest w-full border-t border-outline-variant" id="contact">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
-<div class="md:col-span-2">
-<!-- <div class="font-h3 text-h3 font-extrabold text-primary mb-4">BSL</div> -->
- <!-- Logo -->
-        <div class="flex items-center gap-md">
-            <a href="/">
+<div class="space-y-4">
+<!--- <span class="font-h3 text-h3 font-extrabold text-primary">BSL</span>--->
+        <!-- Logo -->
+        <div class="relative flex flex-col items-start">
+            <a href="/" class="block">
+
+                <!-- Light Logo -->
                 <img 
+                    id="logo-light"
                     alt="BiproSyncLogic Logo"
-                    class="h-10 w-auto"
-                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778454251/bslfullname_jwmcdq.png"/>
+                    class="h-28 w-auto object-contain dark:hidden 
+                           md:absolute md:top-20 md:-left-5 md:h-40"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778795886/fulname-logo-removebg-preview_yobrbj.png"/>
+
+                <!-- Dark Logo -->
+                <img 
+                    id="logo-dark"
+                    alt="BiproSyncLogic Logo"
+                    class="hidden h-28 w-auto object-contain dark:block 
+                           md:absolute md:top-20 md:-left-5 md:h-40"
+                    src="https://res.cloudinary.com/dumgkpy4c/image/upload/v1778801611/fullname-logo-white-removebg-preview_brbqg4.png"/>
+
             </a>
         </div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
-                    Engineering reliable IT ecosystems across Africa through managed services, specialized migrations, and high-impact technical training.
-                </p>
+<p class="text-body-md text-on-surface-variant">Engineering Reliable IT. Powering Business Growth. Africa's leading technology partner.</p>
 </div>
 <div>
-<h6 class="font-bold text-on-surface mb-4">Quick Links</h6>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Careers</a></li>
+<h4 class="font-bold text-on-background mb-6">Services</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Managed Services</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">IT Support</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Infrastructure</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Migration</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-bold text-on-surface mb-4">Connect</h6>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:scale-95 transition-transform" href="#">
-    
-<img alt="Social icon" class="w-6 h-6 object-contain" data-alt="A stylized social media icon design for the LinkedIn platform, set against a modern corporate background. The icon is rendered in a minimalist, clean style with a focus on professional networking and high-level enterprise connections, reflecting BiproSyncLogic's target market of IT executives and directors." src="https://img.icons8.com/?size=100&id=447&format=png&color=000000"/>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:scale-95 transition-transform" href="#">
-<img alt="Social icon" class="w-6 h-6 object-contain" data-alt="A minimalist logo icon for a technology and business platform, presented in high-contrast black and white for a professional look. The background is a clean, bright workspace that complements the light-mode UI design. The mood is corporate, established, and focused on operational efficiency." src="https://img.icons8.com/?size=100&id=LmG49EnUQig9&format=png&color=000000"/>
-</a>
+<h4 class="font-bold text-on-background mb-6">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-background mb-6">Contact</h4>
+<address class="not-italic text-on-surface-variant space-y-3">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                        11 Coachwood Street, Northern Foreshore Estate, Chevron
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">phone</span>
+                        +234 905 878 8143
+                    </p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        info@biprosynclogic.com
+                    </p>
+</address>
 </div>
 </div>
+<div class="border-t border-outline-variant py-8">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm">© 2026 BiproSyncLogic. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">group</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">terminal</span>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop pb-8 text-center border-t border-outline-variant/30 pt-8">
-<p class="font-body-md text-body-md text-on-surface-variant">© 2026 BiproSyncLogic. All rights reserved.</p>
+</div>
 </div>
 </footer>
+
+
+<!-- Mobile Menu Script -->
+<script>
+
+    const menuBtn = document.getElementById("menu-btn");
+    const closeMenu = document.getElementById("close-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileOverlay = document.getElementById("mobile-overlay");
+
+    function openMenu() {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileOverlay.classList.remove("opacity-0", "invisible");
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add("translate-x-full");
+        mobileOverlay.classList.add("opacity-0", "invisible");
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+
+    closeMenu.addEventListener("click", closeMobileMenu);
+
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+
+</script>
+
+<!-- Theme Toggle Script -->
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
+    const themeIconLight = document.getElementById("theme-icon-light");
+    const themeIconDark = document.getElementById("theme-icon-dark");
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        html.classList.add("dark");
+        themeIconLight.classList.add("hidden");
+        themeIconDark.classList.remove("hidden");
+    }
+
+    function toggleTheme() {
+        html.classList.toggle("dark");
+        const isDark = html.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        
+        if (isDark) {
+            themeIconLight.classList.add("hidden");
+            themeIconDark.classList.remove("hidden");
+        } else {
+            themeIconLight.classList.remove("hidden");
+            themeIconDark.classList.add("hidden");
+        }
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+    mobileThemeToggle.addEventListener("click", toggleTheme);
+</script>
 </body></html>
